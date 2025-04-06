@@ -63,7 +63,9 @@ public interface AnalyticsApi {
 					@ApiResponse(code = 500, message = "The request is rejected by the NWDAF and more details (not only the ProblemDetails) are returned.", response = ProblemDetailsAnalyticsInfoRequest.class),
 					@ApiResponse(code = 503, message = "Service Unavailable", response = ProblemDetails.class),
 			})
+
     @RequestMapping(value = "/nnwdaf-analyticsinfo/v1/analytics", produces = {"application/json", "application/problem+json"}, method = RequestMethod.GET)
+
     default ResponseEntity<AnalyticsData> getNWDAFAnalytics(
 			@NotNull @ApiParam(value = "Identify the analytics.", required = true) @Valid @RequestParam(value = "event-id", required = true) String eventId,
 			@ApiParam(value = "Identifies the analytics reporting requirement information.") @Valid @RequestParam(value = "ana-req", required = false) String anaReq,
@@ -123,7 +125,6 @@ public interface AnalyticsApi {
 
                 if (tgtUe != null) {
                     givenTgtUe = InputDataHandler.tgtUeExtractor(tgtUe);
-
                 }
 
                 if (requestedEventId.getEventId().equals("NF_LOAD")) {
@@ -132,13 +133,10 @@ public interface AnalyticsApi {
                     responseBuilder.setNfLoadLevelInfos(nfLoadLevelInformation);
                 }
 
-
                 return new ResponseEntity<>(responseBuilder, HttpStatus.OK);
-
             }
         }
+
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
-
-
 }
