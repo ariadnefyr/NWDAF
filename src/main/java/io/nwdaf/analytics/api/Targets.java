@@ -6,7 +6,9 @@ public class Targets {
 	
 	private String papajohnVm1GenericvnfVm1Netdata = "http://10.10.10.58:19999";
 	private String papajohnVm1GenericvnfVm1Prometheus = "http://localhost:9090";
-	
+
+	private String universityOfPatrasPrometheus = "http://150.140.195.195:9090/graph?g0.expr=&g0.tab=1&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h";
+
 	private String masterNode = "http://150.140.195.195:19999";
 	
 	
@@ -42,8 +44,12 @@ public class Targets {
 	public void setPapajohnVm1GenericvnfVm1Prometheus(String papajohnVm1GenericvnfVm1Prometheus) {
 		this.papajohnVm1GenericvnfVm1Prometheus = papajohnVm1GenericvnfVm1Prometheus;
 	}
-	
-	
-	
-	
+
+	public String getUniversityOfPatrasPrometheus() {
+		return universityOfPatrasPrometheus;
+	}
+
+	public void setUniversityOfPatrasPrometheus(String universityOfPatrasPrometheus) {
+		this.universityOfPatrasPrometheus = universityOfPatrasPrometheus;
+	}
 }

@@ -34,6 +34,7 @@ public class NfLoadLevelResponseBuilder {
 			//Find all the UEs of the given area
 			//String command = "curl http://150.140.195.253:9090/api/v1/query?query=netdata_UE_STATS_GNODEB_bps_average -o /home/gctz/Desktop/Diplwmatikh/Multi_TS/Analytics_info/prometheus_yaml_files/test.json";
 			String command = "curl "+new Targets().getPapajohnVm1GenericvnfVm1Prometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
+			//String command = "curl "+new Targets().getUniversityOfPatrasPrometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
 
 			Process process;
 			String result = null;
