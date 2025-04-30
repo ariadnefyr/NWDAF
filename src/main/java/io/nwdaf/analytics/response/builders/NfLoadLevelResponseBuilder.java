@@ -33,8 +33,8 @@ public class NfLoadLevelResponseBuilder {
 		if(anyUe) {
 			//Find all the UEs of the given area
 			//String command = "curl http://150.140.195.253:9090/api/v1/query?query=netdata_UE_STATS_GNODEB_bps_average -o /home/gctz/Desktop/Diplwmatikh/Multi_TS/Analytics_info/prometheus_yaml_files/test.json";
-			String command = "curl "+new Targets().getPapajohnVm1GenericvnfVm1Prometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
-			//String command = "curl "+new Targets().getUniversityOfPatrasPrometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
+			//String command = "curl "+new Targets().getPapajohnVm1GenericvnfVm1Prometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
+			String command = "curl "+new Targets().getUniversityOfPatrasPrometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
 
 			Process process;
 			String result = null;
@@ -48,7 +48,7 @@ public class NfLoadLevelResponseBuilder {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			String json = result;
+			/*String json = result;
 
 			Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
 			String query = "$.data.result[*].metric.chart";
@@ -94,11 +94,59 @@ public class NfLoadLevelResponseBuilder {
 					//System.out.println(nfLoadLevelInformation.get(i+j).getNfType());
 				}
 
+			}*/
+			if (result != null && !result.isEmpty()) {
+				try {
+					Object document = Configuration.defaultConfiguration().jsonProvider().parse(result);
+
+					// Get the full result array
+					List<LinkedHashMap<String, Object>> results = JsonPath.read(document, "$.data.result[*]");
+
+					for (LinkedHashMap<String, Object> entry : results) {
+						LinkedHashMap<String, Object> metric = (LinkedHashMap<String, Object>) entry.get("metric");
+						List<Object> valueArray = (List<Object>) entry.get("value");
+
+						if (metric != null && valueArray != null && valueArray.size() >= 2) {
+							String chartName = (String) metric.get("chart");
+							String valueStr = (String) valueArray.get(1); // Value is a string like "0.1322"
+
+							try {
+								float cpuFloat = Float.parseFloat(valueStr) * 100;
+								int cpuUsage = Math.round(cpuFloat);
+
+								if (cpuUsage > 0) {  // Filter: only keep CPUs with actual load
+									NfLoadLevelInformation currentNfLoadLevelInfos = new NfLoadLevelInformation();
+									currentNfLoadLevelInfos.setNfSetId(chartName);
+									currentNfLoadLevelInfos.setNfInstanceId(UUID.randomUUID());
+									currentNfLoadLevelInfos.setNfType(new NFType("UPF"));
+									currentNfLoadLevelInfos.setNfCpuUsage(cpuUsage);
+
+									nfLoadLevelInformation.add(currentNfLoadLevelInfos);
+
+									// Optional: log what you're adding
+									System.out.println("Added chart: " + chartName + ", CPU: " + cpuUsage + "%");
+								} else {
+									System.out.println("Skipped chart: " + chartName + ", CPU: " + cpuUsage + "% (zero load)");
+								}
+
+							} catch (NumberFormatException e) {
+								System.err.println("Invalid CPU value: " + valueStr);
+							}
+						}
+					}
+
+				} catch (Exception e) {
+					e.printStackTrace();
+					System.err.println("Failed to parse Prometheus JSON.");
+				}
+			} else {
+				System.err.println("No response from Prometheus.");
 			}
 		}
 		else {
 			List<String> supis = tgtUe.getSupis();
 		}
+		System.out.println("Returning " + nfLoadLevelInformation.size() + " NF Load entries");
 		return nfLoadLevelInformation;
 	}
 }

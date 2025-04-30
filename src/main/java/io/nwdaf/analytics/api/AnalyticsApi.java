@@ -130,6 +130,10 @@ public interface AnalyticsApi {
                 if (requestedEventId.getEventId().equals("NF_LOAD")) {
                     List<NfLoadLevelInformation> nfLoadLevelInformation = new NfLoadLevelResponseBuilder().nfLoadLevelInformation(givenEventFilter, givenTgtUe);
 
+                    System.out.println("nfLoadLevelInformation method called with:");
+                    System.out.println("Filter: " + eventFilter);
+                    System.out.println("Target UE: " + tgtUe);
+
                     responseBuilder.setNfLoadLevelInfos(nfLoadLevelInformation);
                 }
 
