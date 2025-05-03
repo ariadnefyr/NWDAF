@@ -128,6 +128,13 @@ public interface AnalyticsApi {
                 }
 
                 if (requestedEventId.getEventId().equals("NF_LOAD")) {
+                    if(eventFilter == null) {
+                        log.error("eventFilter is null");
+                        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                    }else{
+                        log.info("starting to prepare answer for NF_LOAD");
+                    }
+
                     List<NfLoadLevelInformation> nfLoadLevelInformation = new NfLoadLevelResponseBuilder().nfLoadLevelInformation(givenEventFilter, givenTgtUe);
 
                     System.out.println("nfLoadLevelInformation method called with:");
