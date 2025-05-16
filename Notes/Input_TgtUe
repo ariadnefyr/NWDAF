@@ -1,16 +1,19 @@
-{		"anyUe":"",
-		"supis":["",""],
-		"gpsis":["",""],
-		"intGroupIds":["",""]
-	}
-	
-	
-	
+{
+    "anyUe":"",
+	"supis":["",""],
+	"gpsis":["",""],
+	"intGroupIds":["",""]
+}
+
 {
 	"anyUe":"false",
 	"supis":["imsi-111111","imsi-222222"],
 	"gpsis":["msisdn-111111","msisdn-222222"],
 	"intGroupIds":["",""]
 
+}
+
+{
+    "anyUe":"true"
 }
 

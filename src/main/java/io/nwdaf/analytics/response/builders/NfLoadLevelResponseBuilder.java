@@ -19,6 +19,7 @@ import io.nwdaf.analytics.model.NfLoadLevelInformation;
 import io.nwdaf.analytics.model.Supi;
 import io.nwdaf.analytics.model.TargetUeInformation;
 import net.minidev.json.JSONArray;
+import io.nwdaf.analytics.util.DatasetExporter;
 
 public class NfLoadLevelResponseBuilder {
 	
@@ -102,6 +103,10 @@ public class NfLoadLevelResponseBuilder {
 			List<String> supis = tgtUe.getSupis();
 		}
 		System.out.println("Returning " + nfLoadLevelInformation.size() + " NF Load entries");
+		DatasetExporter.writeToCsv(nfLoadLevelInformation, "nf_load_dataset.csv");
 		return nfLoadLevelInformation;
+
 	}
+
+
 }
