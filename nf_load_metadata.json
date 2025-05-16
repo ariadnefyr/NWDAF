@@ -1,0 +1,4392 @@
+{
+  "dataset_name" : "5G NF Load Analytics Dataset",
+  "description" : "Dataset capturing CPU usage and related metadata for 5G network functions",
+  "creation_date" : "2025-05-16T10:12:52Z",
+  "time_zone" : "UTC",
+  "license" : "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "access_rights" : "public",
+  "author" : "Ariadni Fyrogeni, University of Patras",
+  "records" : [ {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "86eec881-0702-4f00-bef5-c02498c3d8c2",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 185,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "45545e16-ae93-4e8a-a177-2748ae98c392",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 223,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "03b24d23-3eb4-4ed0-a042-ffebc30b0cc3",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 30,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c94573d6-ef9d-4ef4-b23b-ba777bb410db",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "52df579b-944b-4213-9a00-7f0b4fba9eba",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "883c6b0a-f0b0-447b-be94-dc711bca3b27",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 170,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "01310ed4-7519-4015-9334-c157468e8b48",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5b1f522a-10e7-4e16-965a-592521c5b5e7",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 49,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "00a5ba0a-7480-49e8-af7e-2a2c7b099aef",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 206,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7a6a80ff-4cbe-4300-95b2-da93de4d7520",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 36,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "242d4b67-f36a-456f-a1c8-94122e7b5c59",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 131,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c88f28cf-00f4-4bc6-9ec6-b104b7bf4285",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 206,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "950598b4-07b7-45f6-ba95-abcb15fe3af0",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 58,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1815d6e7-b718-4649-bb27-b52c31afc2d6",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 34,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "96b015d1-4d9c-4ee8-8a52-17df0c199478",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 36,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "77ad4c2f-1bb2-4cd5-923d-afcacc187284",
+    "nf_set_id" : "cgroup_machine_qemu_10_instance_000026ad_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 185,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b3f0faaa-1b09-4e13-84b0-9b4e885552a0",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2afa2a21-c8d2-4446-a235-06e78210d0c2",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c95203ee-8b5f-4eff-ba87-c5cc022c3928",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ecccd1b4-99a4-47f7-b2d1-be80994c6584",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 9,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "bf5410b0-1fb9-4e57-92cc-957bac01a99b",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "16027c21-785e-491d-8003-018032b416e5",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f4b75f57-0f20-4499-84d4-d590e7eab024",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7c8d6cf7-7b85-4579-a9fd-2ebc128316aa",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8216f549-6497-4ac6-9ec5-f6c9d7594153",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f18fdd09-e592-48cb-a628-83cad2d5225f",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "cc0d4df7-30d9-42d7-8fc3-f670973a8e5d",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7c03e4d3-cce6-48fc-8385-fbd1da06b46e",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3adf2bf1-41ef-4815-b74f-8b86090142f0",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 8,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2fd35330-973d-4ce0-bba1-b0435470efe8",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9f9b99c2-5c27-464d-b541-cab33ba83778",
+    "nf_set_id" : "cgroup_machine_qemu_2_instance_0000356e_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "23bf8b83-a6bb-43b1-95eb-837ab1c43d21",
+    "nf_set_id" : "cgroup_machine_qemu_3_instance_00003572_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d21a9c46-ac93-4dce-91c1-eb5bf7db8994",
+    "nf_set_id" : "cgroup_machine_qemu_3_instance_00003572_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d27203c4-91aa-4f83-a889-7e3314413446",
+    "nf_set_id" : "cgroup_machine_qemu_3_instance_00003572_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 19,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1c6beb21-176a-4639-81f0-cb8146c16ed1",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 14,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2ef78146-cb4e-4d10-a485-7514cda8b49b",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "990bc080-872e-458a-84f3-958aa2e39c3d",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9eebcf87-15c6-45d7-a6ea-f5cec8a890fc",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "cbc42caf-2517-4799-a889-4afe74886634",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 17,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4e5c35e2-2d4c-4eb0-b7ae-7268cfaf9525",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "28a4c8c7-5f21-458d-9843-8695d9f94c03",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 115,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b7b19a16-258b-4298-8ad6-a364b21925f5",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 9,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f27f5314-e4b7-494b-af41-b1dfcaea88dc",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 26,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "db9fc505-093e-4205-977a-b35c218a5e44",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 39,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1e144a8c-f6ac-4b3b-9f2d-ad84b1495c94",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e24c060d-4796-4a29-94f0-314ea4212222",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 40,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "fe2df056-6afb-4e09-87e0-53827a0f866d",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 54,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "cf5b91e2-afc8-4efd-a9f2-f113104f171d",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 48,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7e0ac4f7-8caa-49b3-9809-d1847c6b10fc",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 58,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f9469c0b-a185-41d4-9e64-306bedb49dfa",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 43,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ca3fd376-c555-4b5d-8303-bfbcc26f9caf",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 32,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3c55df6e-bf59-41f6-9d7d-475d9ad6a58f",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 38,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1445f788-8fcb-4968-909b-a0c39e64ad1b",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 16,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "08b64b85-e25e-4212-a961-8a92f46277ef",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 112,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "311a49bb-a480-4972-a60d-123c7a369e52",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 74,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "26d3d11b-4e72-4738-9275-0b356d4aacef",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 82,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "451ccc49-5bb9-4f93-aaf1-45a38c2abc90",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 47,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c450562a-d84b-49a5-8254-84d8e0ca0afb",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 20,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b440c6f5-b814-42e3-b8c2-fcaa44a55ea8",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 41,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5a1a0f05-a768-4be4-8c04-3603e0373a82",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 48,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5c244d40-7fac-4caf-abc4-8e8fb9db4e37",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 29,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "086805f3-75b9-495b-ac59-0c00fcd9ee8e",
+    "nf_set_id" : "cgroup_machine_qemu_6_instance_000035c0_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e52a4f73-0912-4912-8619-52d23ee63d44",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 256,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1102dbf1-3872-4ca6-8d7d-98eb0d7c3c53",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 256,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5070c2e9-85ec-4b10-b3ee-79358ed5e6ff",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 60,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a2fd2f5b-5dbf-46c3-8156-5d563e9fdabf",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 157,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9085c546-ab54-416a-bb45-0e8997fa98d5",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 72,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f8248338-f1df-4674-8b92-a72a2f19fc68",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 37,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "427e4e14-fa24-4304-9c88-6bfa477d2328",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 157,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "523078fb-45a7-4bdb-b56d-88e53b69ae24",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 20,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e5a27b36-73f3-4c31-b341-1121fa82dbcd",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 63,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "715dab84-e6dd-4b3d-a2f0-6b7e88d493d5",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5c1a438c-32fe-46c4-a71e-b13869afa970",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 12,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7f85dbde-daea-4c91-bc2e-a67dcbca756e",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 35,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e70c4680-e5af-4954-a1ad-d6418c382b46",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 138,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7672a10d-7a3b-45d8-9a85-b5818b5e4ee0",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 120,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "75a2304e-1bb3-480f-9e26-b32fbbd7d096",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 6,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "64e93f8c-49dc-40fa-85ec-03b78c72367f",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1b1b1087-1b19-4772-a590-54e7dfd7c68c",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 67,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "683441a1-64b4-4c48-8cd7-8d4bc9c1fbe8",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "54e374cc-23d5-43b3-93c5-789df3b139b6",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 317,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9b38c573-5949-440e-8d07-00643bbd7dad",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 36,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5a691d37-e168-4246-9803-2afb3596094b",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 63,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9bb4067c-443c-4900-a1ea-2cd7a7faa2a8",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1099f00f-df36-4059-a562-2fa208785dea",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "65fec0c2-86fe-4b6e-9172-c2f12bc25691",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 118,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "69b5e4ae-9817-49f4-95b9-f6f08c34588c",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 39,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2871ba0e-6eb5-4882-9aff-58d2fe707df8",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 24,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "6e05906a-2f90-4e99-b907-a98e05be1dc1",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e541bba4-e72f-4ad9-87de-9d7190fc4012",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 8,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f7dd18b1-a533-4274-b357-0340a5d8572d",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 112,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4aa677f3-c8f5-4e7a-ba04-3ae03bbea6ce",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 80,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "35afa7f6-3842-404c-9a6b-973fcd4e024b",
+    "nf_set_id" : "cgroup_machine_qemu_8_instance_000037b2_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d5c80c47-58dc-4b73-915c-06d5f899e8e4",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9cbdfdff-67fb-4d62-ad3a-7244957d3946",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 40,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "07dc2b98-dfd9-4b56-96a1-e2cb1265835a",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 24,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a931e43a-a215-436d-a78b-12f20a335f06",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 105,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "91a3ec93-d227-4ccc-beac-1f4b1a27071b",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 74,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "abe1a520-e8c4-43ac-b2d9-723f77fff177",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 529,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "31b148a8-f3dd-4c70-ae5c-196e98f6c789",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 45,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b9620fc0-a068-47fe-b3b4-65f508778631",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b35145ee-480e-44aa-a6f4-90235ac33ac0",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1a726edf-0595-40e0-a583-5b2e360ff649",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f22d5828-1a64-4199-847c-76d4f56041b9",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7f569e1c-7c15-4358-8309-d6c7a9daeeed",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 45,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "fea1177f-28ee-47e0-899d-8f25b0f4fa8a",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 83,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4c00195e-f8b6-4056-b843-e07ebdcea122",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 23,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f59b0888-b277-4cda-ac67-32f4b45bff8b",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 52,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c9f1ebd1-e0a4-4a06-8989-3e3de9a80ad3",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 72,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2609d9d1-114b-4779-9de7-223104719053",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 10,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "dfd0fad7-3b4d-4ca3-88a6-134cfe737833",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 34,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "dbc53435-48d1-4ac8-b2b8-6cb8c336c6ee",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 22,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "45a45cf2-9729-4a33-b754-8aa3998357e4",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 54,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "89393169-1fd5-4eae-a0e4-b1d3737bcef3",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 12,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4dca0a01-f1b1-4c7b-bac2-a371d38c4d16",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 10,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5aa56621-97cd-4897-81e3-22c20bf4ede4",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 128,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "704141f4-a0a1-4ddc-867e-bd62d702c2ea",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d6f1448f-3d66-45cd-8688-55f26ab5ba88",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 8,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7505f475-d2b1-4fca-937a-a798d3cc80f8",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 85,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b3548cc5-2d17-4f2d-b4b8-f9ed08d6b0fd",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 44,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "de90a21b-40b8-4494-9b35-54e87d09912c",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 19,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f9d99bbc-1556-4f71-9b9d-3094fd22aa79",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 6,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "220f8fe5-a4ec-4c07-8618-ef70943cd46a",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 27,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8eb9c766-bb9f-4112-a6f2-e511be132327",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 330,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5105fb6e-ddd6-4f5e-aee4-45cbd49a8d7e",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 13,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "222a33bd-58a1-42ea-9032-d55e38d4f9b4",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 79,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d46882cd-8ab3-4ddc-8ad5-6da11c0af92c",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "49c3b795-70b9-458d-9b36-55da7263aac5",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 8,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "142ccc28-0161-46b1-9182-4a3dcafbe5a3",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "469f8606-26a3-4108-b2f3-728bfd33d691",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 42,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "928380ca-684c-4b53-9665-f21531c62b77",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "18ac7760-e9b0-483d-8883-232c644e8181",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 35,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "07d11710-6676-46b8-bee2-a1859a4aec56",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 11,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "891119ad-5724-4e64-bd14-2db737c6d2f1",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "708a0358-e0bc-4358-9707-c1b35002c8b2",
+    "nf_set_id" : "cgroup_machine_qemu_9_instance_00002756_libvirt_qemu.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c98e8ff0-ab22-4df9-8bdf-2b4c387c3754",
+    "nf_set_id" : "cgroup_qemu_qemu_10_instance_00003c02.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1a383489-09b0-44a0-be7e-4377f3ec54c2",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "53e08967-bd92-427b-a87a-d949b7efca1f",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a77e234f-f78c-4a36-a646-11670b2c8ad3",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7275faa2-db32-4df1-bb36-6d82bea15600",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4c201220-e987-42d5-8a7d-081035c25fd8",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c6773cb2-a924-4c9b-879a-3cd468d04041",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f4d4ecbd-e8a7-41bd-8a6b-265d642b5d29",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d441ee01-e69b-46a8-8269-ded27ba2caa8",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 9,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4c82425d-ca10-4704-a685-c992dd555bb1",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1616a777-efc6-463e-b107-ae983095db1e",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1c4c9e28-03ac-4e90-878f-e063588afb0f",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "fbb4b579-7ffb-4c0a-b665-e337064f1f5c",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5336a470-51ae-4fe1-848b-9b6ea8c18468",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a9618fd4-e508-4edb-856a-f712236a37dd",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 9,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "56d2c76d-c636-4c02-b05f-b69225ce29d4",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "16762210-da66-47a7-8e12-943682ec55ba",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "610ce8c4-fe75-49de-b254-e0c1766e5616",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7096c8df-11de-4b6a-b83f-a4378340f6dd",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "51bd45af-c0a0-4418-8baf-c027221685d7",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4b54a2cd-7a56-4b0a-9b16-c83e3827ba3b",
+    "nf_set_id" : "cgroup_qemu_qemu_14_instance_00003ac5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "498b8c0a-4658-425e-9ff1-09727ec34c6b",
+    "nf_set_id" : "cgroup_qemu_qemu_15_instance_000034b1.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 6,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9de48126-a3ac-4e5a-ad74-c692bc45de7f",
+    "nf_set_id" : "cgroup_qemu_qemu_15_instance_000034b1.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "23180677-caab-4601-8752-cb469314f8b2",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 9,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b9d6b422-3dc6-468d-97e9-671ed69d0a74",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2d3479af-a8cb-4c08-993c-1901d8510924",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "bebc80ea-0013-4522-8e67-2a9676646af3",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "69338afe-a8cd-454b-a056-9550a7958ed0",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "96780444-9f4b-4321-ad88-968978d97303",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "660a813c-21d7-4825-bf3e-fb66c8f443c3",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "70278100-ba8f-42f8-9105-18a6e49c15a8",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f76fc179-b828-45cd-b43d-1e89c406b474",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "80618dba-90c3-4452-9f8a-059ed8601d9e",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "95df28d1-a5d3-42b8-95fe-d0a2970c5074",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1b72aaa5-e5ad-447a-b178-5b132ad3fa74",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7bdcd863-fd51-4304-bbfc-ecae59134248",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8a3bdcf5-070b-44a9-881a-032da86dc3a2",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "273d8300-ea41-4ebc-a992-0cd1347ec22d",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "40a0289f-f60a-4c69-9b3c-771cdc609856",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3c17bbe6-46d8-45bd-94a7-679f4cdf55a4",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ede559b2-967c-4a18-a30d-7c41326be981",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "88902c78-65d2-4cb5-b364-9b343ab82215",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4ff24a8b-eb25-4849-a349-da4fa60bbfb2",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "18b4f544-ab9e-42f6-a32b-99b43d9311a2",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "44293de6-55fb-4dd0-ac79-738e16774265",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 61,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2a59ced4-2753-41d6-a918-dcdbaa1c170b",
+    "nf_set_id" : "cgroup_qemu_qemu_16_instance_00003ac6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "db2681f3-f4c5-4935-8276-9f631bda94a5",
+    "nf_set_id" : "cgroup_qemu_qemu_17_instance_00003bfc.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7d627591-e8cc-4f91-955f-c5a70ca7ee5c",
+    "nf_set_id" : "cgroup_qemu_qemu_17_instance_00003bfc.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f549d033-a1f2-4535-abf3-37f5c842c4ac",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "59533e50-563b-459f-89a5-566c32fc6d02",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9e2cb115-c2cb-4f4e-935a-f043c329ce06",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d7ecaa8e-5343-4570-b6c3-53fd482ba31c",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "11e3bc3d-d9ce-42d2-b800-df8a76949f2f",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "13c4f065-57f7-4c02-b340-6ce8341dcbe6",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "955051dd-206e-4def-a6ed-b093ecb85b71",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "98466f41-c7c2-48aa-999c-d6315cb03150",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b43946a6-05a0-4d41-b976-8a83d5d41002",
+    "nf_set_id" : "cgroup_qemu_qemu_18_instance_000040a5.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "55255ea7-f592-493a-91f0-6139ed888324",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b727477e-ff24-4c6c-a0ea-33c4909d476c",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4a4a64ab-2330-48ee-8342-88b438a208ad",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d4c24da4-0a02-482a-a6f4-1b57eea713a5",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "fb80c0a4-7de3-4aa2-8027-2a1b856b1617",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b731f37e-bbd6-4132-9092-cfeb04840cd6",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a2c71779-5dbd-4f93-8651-4dbb0c7d47f8",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b90f95a3-e00c-4ba4-bb81-cd0faf30ae3f",
+    "nf_set_id" : "cgroup_qemu_qemu_19_instance_000040a6.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "116a6aea-b3ad-4b2a-9be8-fb27eda2144e",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "6d1235aa-e6c0-4684-bb48-0c3cf0153bfd",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "60c5c091-6247-48ad-90c3-dc4a6a1c7a39",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ca4621ed-25c4-43b9-aaa7-89a015eadba0",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9d6071ef-178a-4466-b82f-6b62db8c30d6",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "66a34104-8191-4c03-98a8-529c9f035069",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e793f382-55b9-410c-b93c-95c70037e919",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d4d9b330-bf08-4ee1-aae2-a02a316e5298",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a6fb279e-72e5-4be4-9a77-08c7307b427e",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8eeea31c-b58e-42a5-a09d-c259985d3d02",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9bb27224-a683-4319-a06a-e02921dc1e9f",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3adeb7b8-c0d3-4c40-87b4-f68fadf0e7bc",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "0839a387-6546-4d7b-bc93-50b878d4c683",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f490da28-b176-4ca3-89cf-5a8239e391d9",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "500cd661-e089-46fc-a373-4b8a45f4e9b4",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1cb9ff15-ed57-4874-8f67-a23bec54873c",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "6379ab71-4d9c-4f02-8721-737e927e36bb",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "eceaf161-e892-45f3-8fbf-30901e8987f2",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "62286e08-ac58-48f4-ab54-6d4ab41431d2",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d9a29505-7d7f-47c8-9ba7-0bee49aa8d2c",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5607aebf-cdd8-4cfe-b0c9-e3ae78b633b2",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_000005db.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9bcccf30-9811-41e8-82c7-5f08876481e1",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001090.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "02797556-f8cf-47ce-bb3d-4e82af4894f2",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001090.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9206012c-be3a-481f-9607-ca081e613417",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001090.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "29ed8e26-77ca-4ebf-8432-9e8aa2dc4f58",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001090.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "009c5257-52e4-44df-8c3b-3de460b4703b",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001d84.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2dd34656-d0a3-4048-8ca2-377e023527c3",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001d84.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5d6f9f25-35fe-4a10-bcb6-eb19fd90dbee",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00001d84.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "224f8be6-d170-4528-889c-d6ad05f3ea6d",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00002307.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "06385ce9-aeae-4b50-9bfe-6650cede9e11",
+    "nf_set_id" : "cgroup_qemu_qemu_1_instance_00003f5f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a4e424b2-9bec-4987-9207-b6c3a465faa1",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "5c3199c4-258c-403f-b087-31c85ed0d514",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7ae945bc-ea2d-4478-9446-bf00e4eaaa2e",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "51fad738-b0fd-4dd9-9c43-a478a84e59df",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "770c74a9-8c51-4c30-aad5-fb243e2eead4",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "afebea13-506d-489b-98ce-e6d28afb097b",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2bab647c-8dfb-4027-999f-4eadb523bb2e",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2e602c27-b07e-4a1a-9557-018147aba2f0",
+    "nf_set_id" : "cgroup_qemu_qemu_20_instance_000040a7.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3386e7b0-95bf-459f-9e2b-1a4c19cf48df",
+    "nf_set_id" : "cgroup_qemu_qemu_21_instance_00003c49.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 11,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b1e51621-4875-433b-9715-cbb9ebea52b0",
+    "nf_set_id" : "cgroup_qemu_qemu_21_instance_00003c49.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "456b665a-86f5-4e61-8510-b63a84f7f0ba",
+    "nf_set_id" : "cgroup_qemu_qemu_21_instance_00003c49.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "abf7c094-e805-434c-aa15-6de44762c9a2",
+    "nf_set_id" : "cgroup_qemu_qemu_21_instance_00003c49.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e1bfa245-9e8a-4e08-996b-a506c7fc936e",
+    "nf_set_id" : "cgroup_qemu_qemu_21_instance_00003c49.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2bf10648-bf3d-44e4-8834-ffd4d51f17d1",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a55d3657-cb7e-4ad9-9a4f-9fe57f439960",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "52666e37-5328-4f52-9c8f-8dce170d0817",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d3cb1368-7b33-43ed-910c-e785405480a5",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "43ad019e-a8ee-459f-81fd-5733fe43cf21",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "83492b7b-056b-487a-a71b-b71b13854d54",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "505ebd9e-62f4-4a78-b81d-edf571b1b3a9",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7633bf5a-0cf8-4646-b85f-3f586ce4eb87",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "aefdff9a-ae92-4474-ab45-a5666011ffe2",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 79,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "98ba52cd-24b6-4fbf-8f2a-8b1f4ae136b5",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 11,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "de99f0bf-30cc-41fb-92bb-fe4f16b76d2d",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9e491b55-8745-4ae1-849d-983fc83fa27c",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "39ef3397-47ed-436a-b0b8-6a2fbd9f5d71",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e7932f8a-cef7-4eef-98df-f7e95c57bf34",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "368e74f0-3cf9-4e10-a630-61ed49afeb83",
+    "nf_set_id" : "cgroup_qemu_qemu_22_instance_00003c4a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ae6b7bae-6bf4-4683-937f-f253103ff5eb",
+    "nf_set_id" : "cgroup_qemu_qemu_23_instance_00002577.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "0b29cea6-0d20-4669-b015-8fcc54929b26",
+    "nf_set_id" : "cgroup_qemu_qemu_23_instance_00002577.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "720cb57f-d6b9-4d18-80c1-96277cf4951d",
+    "nf_set_id" : "cgroup_qemu_qemu_23_instance_00002577.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "91109d04-6a3b-4e7b-bc11-caab57c1ca61",
+    "nf_set_id" : "cgroup_qemu_qemu_23_instance_00002577.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 6,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "117e2f61-f953-4270-85e7-fe26fa1278e7",
+    "nf_set_id" : "cgroup_qemu_qemu_2_instance_00002cb0.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f825db6b-29c4-41b1-a2f7-fa333ed2d4e4",
+    "nf_set_id" : "cgroup_qemu_qemu_2_instance_00003f00.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "26505dbd-06f4-4d10-8abd-f94442d7e07b",
+    "nf_set_id" : "cgroup_qemu_qemu_2_instance_00003f9e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f568ecb9-7363-4594-81e6-4a5d25521759",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7eb9273f-0d7f-48d9-9994-95978a95f2fd",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8c27dd6e-b287-4e24-872b-415008026e0b",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ecef30e7-5e2f-4a54-b5f5-7db8eb5dd651",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7879070a-abce-4ca4-9855-02d6d38fff69",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "b9125461-f9c5-4927-9edb-18b76937548e",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "e4ceb411-5eb3-402f-a3d2-770859ed762b",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_00002c6a.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "6e76a418-b210-4231-890f-d0b4100f2f5f",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_000034b0.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3ac7d21c-e10d-49c0-8905-eaacda3ee308",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_000034b0.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "fbd57841-5c0b-4ec7-b9c7-1caab94d8df9",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_000034b0.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "44dca3aa-f0cb-4053-a83c-9fccbf2d4194",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9f0a4f89-801d-427d-9989-346a62fe88c7",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3334ddbb-2b4d-4366-bf53-346c32ef6589",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "8347609f-34d7-43fa-8e92-0e4c96f3c04c",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7a1ce7aa-6b95-47a5-b4c6-5e29cff35527",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 17,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "59baf551-c670-48d5-8246-022a5aba3981",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d525b258-5810-4525-903e-1a3efd6c219b",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 116,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3c78663e-438f-4728-a53e-43b0737525aa",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 14,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "46394415-3784-4f1e-b800-7a4266ac41f2",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9bb19197-9f9a-4f28-90d4-d3125741d130",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f4e71da3-3c91-4777-9d4c-8a3aecdf03cb",
+    "nf_set_id" : "cgroup_qemu_qemu_3_instance_0000359d.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7b670a4c-d20e-4adf-b524-ea7348f37d8c",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00002848.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "6dfc0627-1b36-48e2-b73b-7e37aec976a8",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00002848.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9cda1619-3efb-40ad-a563-b027abdce90e",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00002848.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "2e7bdbf9-f820-4fad-a6d9-1fae1297e724",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00002848.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "1e65c196-876c-44f9-ae6d-63670ff7a7e7",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00002848.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "f55d7f36-79aa-4f2f-968b-230740837980",
+    "nf_set_id" : "cgroup_qemu_qemu_4_instance_00004047.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "35616fa7-24f6-41f8-9f4c-6a1d37aca088",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "34b18f66-2993-48b7-816d-e5cc825c36c9",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3a17cf5d-b734-4d09-8bb8-6861db7d4065",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "a74d4372-4473-466b-b8ad-2d1428d5bd60",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 7,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "0023525b-22fb-4ea1-8a8c-f58f9ccdb874",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 8,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "116392ce-d60c-4de2-81de-9df928ae7d44",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d93f8487-d59f-47fe-963d-088f474071ab",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 14,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "4dc3435b-a68f-40b6-bd99-bc38e7083d61",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 5,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "975d0564-63d9-4e31-afbc-353d243df2ea",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "680a74db-7015-4613-a741-3d14ea2f4451",
+    "nf_set_id" : "cgroup_qemu_qemu_7_instance_0000359f.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "41fa787d-5dfe-4864-81ad-e961d85357b2",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "7f47b1d3-527d-4ce9-951f-63e204c1ac89",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 2,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "9f03be31-00b0-475b-8bf2-f7ad287e0381",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "d64602cb-bbcb-438a-bf0d-57c778526c5d",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "23a1f568-e64f-4e07-9657-a4c9f0c86ee8",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "121fe8e8-fa3c-4fd5-9c39-28fd78671f8f",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 11,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "041c30f1-21ff-4e41-a376-e08398940827",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 3,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "ba11eb05-9812-429e-a718-e93b678a888b",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_0000359e.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "c4ab76d9-9851-472c-a10f-06b9130344b4",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_000035fe.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 29,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "3d37400f-f815-41da-b181-f1cda2ddef46",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_000035fe.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 4,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-05-16T10:12:52Z",
+    "nf_type" : "UPF",
+    "nf_instance_id" : "0ea79a36-797f-4927-9756-2f135e2d132a",
+    "nf_set_id" : "cgroup_qemu_qemu_8_instance_000035fe.cpu_per_core",
+    "network_slice" : "",
+    "metric" : {
+      "value" : 1,
+      "type" : "CPU Usage",
+      "unit" : "%"
+    },
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  } ]
+}

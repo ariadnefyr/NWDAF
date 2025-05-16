@@ -103,7 +103,10 @@ public class NfLoadLevelResponseBuilder {
 			List<String> supis = tgtUe.getSupis();
 		}
 		System.out.println("Returning " + nfLoadLevelInformation.size() + " NF Load entries");
-		DatasetExporter.writeToCsv(nfLoadLevelInformation, "nf_load_dataset.csv");
+
+		DatasetExporter.writeDataToCsv(nfLoadLevelInformation, "nf_load_data.csv");
+		DatasetExporter.writeMetadataToJson(nfLoadLevelInformation, "nf_load_metadata.json");
+
 		return nfLoadLevelInformation;
 
 	}
