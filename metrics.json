@@ -1,0 +1,990 @@
+{
+  "dataset_name" : "5G NWDAF NSI LOAD LEVEL Dataset",
+  "description" : "Dataset capturing NSI LOAD LEVEL metrics values and related metadata for 5G core network",
+  "creation_date" : "2025-06-28T17:26:07.819621200Z",
+  "time_zone" : "UTC",
+  "license" : "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "access_rights" : "public",
+  "author" : "Ariadni Fyrogeni, University of Patras",
+  "records" : [ {
+    "timestamp" : "2025-06-28T17:24:32.649Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0383331,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.86849,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:24:37.657Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0884742,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9544233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:24:42.648Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.1093896,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.8294233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:24:47.651Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0838869,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.8736967,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:24:52.662Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.1335871,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.86979,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:24:57.655Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0520393,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.8307267,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:02.663Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0555322,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.8294233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:07.658Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.1370306,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9205767,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:12.663Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0982171,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.8346367,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:17.651Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0046631,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.78906,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:22.648Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0715131,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9088567,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:27.658Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0709027,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9166667,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:32.661Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0289105,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9986967,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:37.656Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0328519,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9166667,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:42.661Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0744486,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9518233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:47.652Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.1245995,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9544233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:52.650Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0602371,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.86849,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:25:57.649Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0570333,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.87109,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:26:02.654Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 6.451E-4,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.86719,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  }, {
+    "timestamp" : "2025-06-28T17:26:07.661Z",
+    "nf_type" : "",
+    "nf_instance_id" : "smf:9090",
+    "nf_set_id" : "smf-internals",
+    "network_slice" : "",
+    "metrics" : [ {
+      "type" : "UEs Active",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "Active UEs",
+      "description" : "Number of active UEs.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "s5c Rx Sessions requested to be created",
+      "description" : "Create Session requests received.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU time",
+      "description" : "CPU time consumed by the process.",
+      "value" : 326,
+      "unit" : "seconds"
+    }, {
+      "type" : "Memory",
+      "description" : "Memory currently used (resident set size).",
+      "value" : 66310144,
+      "unit" : "bytes"
+    }, {
+      "type" : "UE Count",
+      "description" : "Average number of UEs connected to the gNB. ",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "type" : "CPU Percentage",
+      "description" : "Percentage of the CPU used for the procedure.",
+      "value" : 0.0593046,
+      "unit" : "%"
+    }, {
+      "type" : "Memory Usage",
+      "description" : "Memory currently used in MiB.",
+      "value" : 54.9544233,
+      "unit" : "MiB"
+    } ],
+    "traffic_condition" : "normal",
+    "event_annotation" : "none",
+    "weather_condition" : "clear"
+  } ]
+}
