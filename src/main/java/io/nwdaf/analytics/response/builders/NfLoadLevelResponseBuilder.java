@@ -8,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
+import java.time.OffsetDateTime;
 
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
@@ -16,20 +17,20 @@ import io.nwdaf.analytics.api.Targets;
 import io.nwdaf.analytics.model.EventFilter;
 import io.nwdaf.analytics.model.NFType;
 import io.nwdaf.analytics.model.NfLoadLevelInformation;
-import io.nwdaf.analytics.model.Supi;
+import io.nwdaf.analytics.model.AnalyticsMetadataInfo;
+import io.nwdaf.analytics.model.TimeWindow;
 import io.nwdaf.analytics.model.TargetUeInformation;
-import net.minidev.json.JSONArray;
-import io.nwdaf.analytics.util.DatasetExporter;
+import io.nwdaf.analytics.response.builders.DatasetBuilder;
 
 public class NfLoadLevelResponseBuilder {
-	
+
 	public NfLoadLevelResponseBuilder() {
-		
+
 	}
-	
+
 	public List <NfLoadLevelInformation> nfLoadLevelInformation(EventFilter eventFilter, TargetUeInformation tgtUe) {
 		List <NfLoadLevelInformation> nfLoadLevelInformation = new ArrayList<NfLoadLevelInformation>();
-		
+
 		Boolean anyUe = tgtUe.isAnyUe();
 		System.out.println("anyUe: " + anyUe);
 		if(anyUe) {
@@ -38,15 +39,16 @@ public class NfLoadLevelResponseBuilder {
 			//String command = "curl "+new Targets().getPapajohnVm1GenericvnfVm1Prometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
 			String command = "curl "+new Targets().getUniversityOfPatrasPrometheus()+"/api/v1/query?query=netdata_cgroup_cpu_per_core_percentage_average";
 
+
 			Process process;
 			String result = null;
 			try {
 				process = Runtime.getRuntime().exec(command);
 				//process.getInputStream();
 				result = new BufferedReader(
-                           new InputStreamReader(process.getInputStream()))
-                               .lines()
-                               .collect(Collectors.joining("\n"));
+						new InputStreamReader(process.getInputStream()))
+						.lines()
+						.collect(Collectors.joining("\n"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -65,6 +67,9 @@ public class NfLoadLevelResponseBuilder {
 						if (metric != null && valueArray != null && valueArray.size() >= 2) {
 							String chartName = (String) metric.get("chart");
 							String valueStr = (String) valueArray.get(1); // Value is a string like "0.1322"
+							Object tsObj = valueArray.get(0); // Prometheus timestamp as float (seconds)
+							double tsDouble = Double.parseDouble(tsObj.toString());
+							long seconds = (long) tsDouble; // or round to nearest second
 
 							try {
 								float cpuFloat = Float.parseFloat(valueStr) * 100;
@@ -76,6 +81,14 @@ public class NfLoadLevelResponseBuilder {
 									currentNfLoadLevelInfos.setNfInstanceId(UUID.randomUUID());
 									currentNfLoadLevelInfos.setNfType(new NFType("UPF"));
 									currentNfLoadLevelInfos.setNfCpuUsage(cpuUsage);
+
+									AnalyticsMetadataInfo currentNfMetadataInfos = new AnalyticsMetadataInfo();
+									OffsetDateTime startTime = OffsetDateTime.now().minusMinutes(5);  // simulate 5-minute window
+									OffsetDateTime endTime = OffsetDateTime.now();
+									TimeWindow window = new TimeWindow();
+									window.setStartTime(startTime);
+									window.setStopTime(endTime);
+									currentNfMetadataInfos.setDataWindow(window);
 
 									nfLoadLevelInformation.add(currentNfLoadLevelInfos);
 
@@ -104,12 +117,11 @@ public class NfLoadLevelResponseBuilder {
 		}
 		System.out.println("Returning " + nfLoadLevelInformation.size() + " NF Load entries");
 
-		DatasetExporter.writeDataToCsv(nfLoadLevelInformation, "nf_load_data.csv");
-		DatasetExporter.writeMetadataToJson(nfLoadLevelInformation, "nf_load_metadata.json");
+		DatasetBuilder.writeDataToCsv(nfLoadLevelInformation, "nf_load_data.csv");
+		DatasetBuilder.writeMetadataToJson(nfLoadLevelInformation, "nf_load_metadata.json");
 
 		return nfLoadLevelInformation;
 
 	}
-
 
 }

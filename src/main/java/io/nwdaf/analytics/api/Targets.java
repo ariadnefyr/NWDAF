@@ -8,6 +8,7 @@ public class Targets {
 	private String papajohnVm1GenericvnfVm1Prometheus = "http://localhost:9090";
 
 	private String universityOfPatrasPrometheus = "http://150.140.195.195:9090";
+	private String open5GSPrometheus = "http://localhost:9090";
 
 	private String masterNode = "http://150.140.195.195:19999";
 	
@@ -51,5 +52,13 @@ public class Targets {
 
 	public void setUniversityOfPatrasPrometheus(String universityOfPatrasPrometheus) {
 		this.universityOfPatrasPrometheus = universityOfPatrasPrometheus;
+	}
+
+	public String getOpen5GSPrometheus() {
+		return open5GSPrometheus;
+	}
+
+	public void setOpen5GSPrometheus(String open5GSPrometheus) {
+		this.open5GSPrometheus = open5GSPrometheus;
 	}
 }

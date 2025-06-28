@@ -1,4 +1,4 @@
-package io.nwdaf.analytics.util;
+package io.nwdaf.analytics.response.builders;
 
 import io.nwdaf.analytics.model.NfLoadLevelInformation;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,7 +12,7 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-public class DatasetExporter {
+public class DatasetBuilder {
 
     private static final DateTimeFormatter formatter =
             DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'").withZone(ZoneOffset.UTC);
@@ -49,11 +49,13 @@ public class DatasetExporter {
 
         // Data records
         ArrayNode records = mapper.createArrayNode();
-        String timestamp = formatter.format(Instant.now());
+        //String timestamp = formatter.format(Instant.now());
+
 
         for (NfLoadLevelInformation info : infoList) {
+            //String timestamp = formatter.format(info.getDataWindow());
             ObjectNode record = mapper.createObjectNode();
-            record.put("timestamp", timestamp);
+            //record.put("timestamp", timestamp);
             record.put("nf_type", info.getNfType() != null ? info.getNfType().toString() : "");
             record.put("nf_instance_id", info.getNfInstanceId() != null ? info.getNfInstanceId().toString() : "");
             record.put("nf_set_id", info.getNfSetId() != null ? info.getNfSetId() : "");

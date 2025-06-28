@@ -268,7 +268,6 @@ public class NfLoadLevelInformation   {
     this.confidence = confidence;
   }
 
-
   @Override
   public boolean equals(java.lang.Object o) {
     if (this == o) {
