@@ -34,13 +34,12 @@ public class JsonBuilder {
         for (int i = 0; i < maxRows; i++) {
             Map<String, Object> record = new LinkedHashMap<>();
             record.put("timestamp", getTimestamp(timestamps, i));
-            record.put("nf_type", "");
+            record.put("nf_type", "SMF");
             record.put("nf_instance_id", getInstance(uesActive, i));
             record.put("nf_set_id", getJob(uesActive, i));
             record.put("network_slice", "");
 
             List<Map<String, Object>> metrics = new ArrayList<>();
-            metrics.add(metricObj("UEs Active", "", getValue(uesActive, i), ""));
             metrics.add(metricObj("Active UEs", "Number of active UEs.", getValue(uesActive, i), ""));
             metrics.add(metricObj("s5c Rx Sessions requested to be created", "Create Session requests received.", getValue(s5cRxCreateSession, i), ""));
             metrics.add(metricObj("CPU time", "CPU time consumed by the process.", getValue(cpuSeconds, i), "seconds"));
