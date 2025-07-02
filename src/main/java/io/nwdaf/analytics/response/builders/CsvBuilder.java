@@ -1,5 +1,9 @@
 package io.nwdaf.analytics.response.builders;
 
+import io.nwdaf.analytics.model.NsiLoadLevelInfo;
+import io.nwdaf.analytics.model.ResourceUsage;
+import io.nwdaf.analytics.model.NumberAverage;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
@@ -8,26 +12,40 @@ public class CsvBuilder {
 
     public static void writeCsv(
             List<Long> timestamps,
-            List<String> uesActive,
-            List<String> s5cRxCreateSession,
-            List<String> cpuSeconds,
-            List<String> memoryBytes,
-            List<String> ueCount,
-            List<String> cpuPercentage,
-            List<String> memoryUsage,
+            List<NsiLoadLevelInfo> nsiLoadLevelInfos,
             int maxRows
     ) {
         try (FileWriter writer = new FileWriter("metrics.csv")) {
-            writer.write("timestamp,uesActive,s5cRxCreateSession,cpuSeconds,memoryBytes,ueCount,cpuPercentage,memoryUsage\n");
-            for (int i = 0; i < maxRows; i++) {
-                writer.write(getTimestamp(timestamps, i) + ",");
-                writer.write(getMetricValue(uesActive, i) + ",");
-                writer.write(getMetricValue(s5cRxCreateSession, i) + ",");
-                writer.write(getMetricValue(cpuSeconds, i) + ",");
-                writer.write(getMetricValue(memoryBytes, i) + ",");
-                writer.write(getMetricValue(ueCount, i) + ",");
-                writer.write(getMetricValue(cpuPercentage, i) + ",");
-                writer.write(getMetricValue(memoryUsage, i) + "\n");
+            writer.write("timestamp,cpuUsage,memoryUsage,numOfUes,numOfPduSess,confidence,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod\n");
+            //writer.write("timestamp,snssai,nsiId,cpuUsage,memoryUsage,numOfUes,numOfPduSess,confidence,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod\n");
+            for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
+                NsiLoadLevelInfo info = nsiLoadLevelInfos.get(i);
+                String resUsgThrCrossTimePeriodStr = "";
+                if (info.getResUsgThrCrossTimePeriod() != null && !info.getResUsgThrCrossTimePeriod().isEmpty()) {
+                    // Concatenate all time windows as [startTime-endTime]...
+                    StringBuilder sb = new StringBuilder();
+                    info.getResUsgThrCrossTimePeriod().forEach(tw -> {
+                        sb.append("[")
+                          .append(tw.getStartTime() != null ? tw.getStartTime().toString() : "")
+                          .append(" - ")
+                          .append(tw.getStopTime() != null ? tw.getStopTime().toString() : "")
+                          .append("]");
+                    });
+                    resUsgThrCrossTimePeriodStr = sb.toString();
+                }
+                writer.write(
+                        //(info.getSnssai() != null ? info.getSnssai().toString() : "") + "," +
+                        //(info.getNsiId() != null ? info.getNsiId() : "") + "," +
+                        getTimestamp(timestamps, i) + "," +
+                        (info.getResUsage() != null && info.getResUsage().getCpuUsage() != null ? info.getResUsage().getCpuUsage() : "") + "," +
+                        (info.getResUsage() != null && info.getResUsage().getMemoryUsage() != null ? info.getResUsage().getMemoryUsage() : "") + "," +
+                        (info.getNumOfUes() != null && info.getNumOfUes().getNumber() != null ? info.getNumOfUes().getNumber() : "") + "," +
+                        (info.getNumOfPduSess() != null && info.getNumOfPduSess().getNumber() != null ? info.getNumOfPduSess().getNumber() : "") + "," +
+                        (info.getConfidence() != null ? info.getConfidence() : "") + "," +
+                        (info.getNumOfExceedLoadLevelThr() != null ? info.getNumOfExceedLoadLevelThr() : "") + "," +
+                        (info.getExceedLoadLevelThrInd() != null ? info.getExceedLoadLevelThrInd() : "") + "," +
+                        "\"" + resUsgThrCrossTimePeriodStr + "\"" + "\n"
+                );
             }
             System.out.println("CSV file created: metrics.csv");
         } catch (IOException e) {
@@ -38,16 +56,5 @@ public class CsvBuilder {
     private static String getTimestamp(List<Long> timestamps, int index) {
         if (index >= timestamps.size()) return "";
         return java.time.Instant.ofEpochMilli(timestamps.get(index)).toString();
-    }
-
-    private static String getMetricValue(List<String> list, int index) {
-        if (index >= list.size()) return "";
-        String entry = list.get(index);
-        int valueIdx = entry.indexOf("value=");
-        if (valueIdx == -1) return "";
-        int commaIdx = entry.indexOf(",", valueIdx);
-        if (commaIdx == -1) commaIdx = entry.indexOf("]", valueIdx);
-        if (commaIdx == -1) return "";
-        return entry.substring(valueIdx + 6, commaIdx).trim();
     }
 }

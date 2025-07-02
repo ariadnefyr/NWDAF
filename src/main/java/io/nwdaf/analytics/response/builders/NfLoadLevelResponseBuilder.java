@@ -20,7 +20,6 @@ import io.nwdaf.analytics.model.NfLoadLevelInformation;
 import io.nwdaf.analytics.model.AnalyticsMetadataInfo;
 import io.nwdaf.analytics.model.TimeWindow;
 import io.nwdaf.analytics.model.TargetUeInformation;
-import io.nwdaf.analytics.response.builders.DatasetBuilder;
 
 public class NfLoadLevelResponseBuilder {
 
@@ -117,8 +116,8 @@ public class NfLoadLevelResponseBuilder {
 		}
 		System.out.println("Returning " + nfLoadLevelInformation.size() + " NF Load entries");
 
-		DatasetBuilder.writeDataToCsv(nfLoadLevelInformation, "nf_load_data.csv");
-		DatasetBuilder.writeMetadataToJson(nfLoadLevelInformation, "nf_load_metadata.json");
+		//DatasetBuilder.writeDataToCsv(nfLoadLevelInformation, "nf_load_data.csv");
+		//DatasetBuilder.writeMetadataToJson(nfLoadLevelInformation, "nf_load_metadata.json");
 
 		return nfLoadLevelInformation;
 

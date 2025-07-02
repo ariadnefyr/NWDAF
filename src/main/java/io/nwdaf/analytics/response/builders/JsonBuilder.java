@@ -2,6 +2,8 @@ package io.nwdaf.analytics.response.builders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import io.nwdaf.analytics.model.NsiLoadLevelInfo;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Instant;
@@ -11,13 +13,7 @@ public class JsonBuilder {
 
     public static void writeJson(
             List<Long> timestamps,
-            List<String> uesActive,
-            List<String> s5cRxCreateSession,
-            List<String> cpuSeconds,
-            List<String> memoryBytes,
-            List<String> ueCount,
-            List<String> cpuPercentage,
-            List<String> memoryUsage,
+            List<NsiLoadLevelInfo> nsiLoadLevelInfos,
             int maxRows
     ) {
         Map<String, Object> root = new LinkedHashMap<>();
@@ -30,23 +26,60 @@ public class JsonBuilder {
         root.put("author", "Ariadni Fyrogeni, University of Patras");
 
         List<Map<String, Object>> records = new ArrayList<>();
+        for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
+            NsiLoadLevelInfo info = nsiLoadLevelInfos.get(i);
 
-        for (int i = 0; i < maxRows; i++) {
             Map<String, Object> record = new LinkedHashMap<>();
             record.put("timestamp", getTimestamp(timestamps, i));
             record.put("nf_type", "SMF");
-            record.put("nf_instance_id", getInstance(uesActive, i));
-            record.put("nf_set_id", getJob(uesActive, i));
-            record.put("network_slice", "");
+            record.put("nf_instance_id", ""); // Fill as needed
+            record.put("nf_set_id", ""); // Fill as needed
+            record.put("network_slice", info.getSnssai() != null ? info.getSnssai().toString() : "");
 
             List<Map<String, Object>> metrics = new ArrayList<>();
-            metrics.add(metricObj("Active UEs", "Number of active UEs.", getValue(uesActive, i), ""));
-            metrics.add(metricObj("s5c Rx Sessions requested to be created", "Create Session requests received.", getValue(s5cRxCreateSession, i), ""));
-            metrics.add(metricObj("CPU time", "CPU time consumed by the process.", getValue(cpuSeconds, i), "seconds"));
-            metrics.add(metricObj("Memory", "Memory currently used (resident set size).", getValue(memoryBytes, i), "bytes"));
-            metrics.add(metricObj("UE Count", "Average number of UEs connected to the gNB. ", getValue(ueCount, i), ""));
-            metrics.add(metricObj("CPU Percentage", "Percentage of the CPU used for the procedure.", getValue(cpuPercentage, i), "%"));
-            metrics.add(metricObj("Memory Usage", "Memory currently used in MiB.", getValue(memoryUsage, i), "MiB"));
+            /*metrics.add(metricObj("Active UEs", "", "", "Number of active UEs.",
+                info.getNumOfUes() != null && info.getNumOfUes().getNumber() != null ? info.getNumOfUes().getNumber() : "", ""));
+            metrics.add(metricObj("CPU time", "", "", "CPU time consumed by the process.",
+                info.getResUsage() != null && info.getResUsage().getCpuUsage() != null ? info.getResUsage().getCpuUsage() : "", "seconds"));
+            metrics.add(metricObj("Memory", "", "", "Memory currently used (resident set size).",
+                info.getResUsage() != null && info.getResUsage().getMemoryUsage() != null ? info.getResUsage().getMemoryUsage() : "", "bytes"));*/
+            metrics.add(metricObj("s5c Rx Sessions requested to be created", "numOfPduSess", "NumberAverage", "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
+                    info.getNumOfPduSess() != null && info.getNumOfPduSess().getNumber() != null ? info.getNumOfPduSess().getNumber() : "", ""));
+            metrics.add(metricObj("UE Count", "numOfUes", "NumberAverage", "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
+                info.getNumOfUes() != null && info.getNumOfUes().getNumber() != null ? info.getNumOfUes().getNumber() : "", ""));
+            metrics.add(metricObj("CPU Percentage", "cpuUsage", "Uinteger", "Average usage of virtual CPU.",
+                info.getResUsage() != null && info.getResUsage().getCpuUsage() != null ? info.getResUsage().getCpuUsage() : "", "%"));
+            metrics.add(metricObj("Memory Usage", "memoryUsage", "Uinteger", "Average usage of memory, in MiB.",
+                info.getResUsage() != null && info.getResUsage().getMemoryUsage() != null ? info.getResUsage().getMemoryUsage() : "", "MiB"));
+
+            // Add the three new metrics
+            metrics.add(metricObj(
+                "Number of Exceed Load Level Threshold", "numOfExceedLoadLevelThr", "integer",
+                "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+                info.getNumOfExceedLoadLevelThr() != null ? info.getNumOfExceedLoadLevelThr() : "", ""
+            ));
+            metrics.add(metricObj(
+                "Exceed Load Level Threshold Indicator", "exceedLoadLevelThrInd", "Boolean",
+                "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+                info.getExceedLoadLevelThrInd() != null ? info.getExceedLoadLevelThrInd() : false, ""
+            ));
+            String resUsgThrCrossTimePeriodStr = "";
+            if (info.getResUsgThrCrossTimePeriod() != null && !info.getResUsgThrCrossTimePeriod().isEmpty()) {
+                StringBuilder sb = new StringBuilder();
+                info.getResUsgThrCrossTimePeriod().forEach(tw -> {
+                    sb.append("[")
+                      .append(tw.getStartTime() != null ? tw.getStartTime().toString() : "")
+                      .append(" - ")
+                      .append(tw.getStopTime() != null ? tw.getStopTime().toString() : "")
+                      .append("]");
+                });
+                resUsgThrCrossTimePeriodStr = sb.toString();
+            }
+            metrics.add(metricObj(
+                "Resource Usage Threshold Cross Time Period", "resUsgThrCrossTimePeriod", "array(TimeWindow)",
+                "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+                resUsgThrCrossTimePeriodStr, ""
+            ));
 
             record.put("metrics", metrics);
             record.put("traffic_condition", "normal");
@@ -55,7 +88,6 @@ public class JsonBuilder {
 
             records.add(record);
         }
-
         root.put("records", records);
 
         ObjectMapper mapper = new ObjectMapper();
@@ -71,54 +103,17 @@ public class JsonBuilder {
 
     private static String getTimestamp(List<Long> timestamps, int index) {
         if (index >= timestamps.size()) return "";
-        return Instant.ofEpochMilli(timestamps.get(index)).toString();
+        return java.time.Instant.ofEpochMilli(timestamps.get(index)).toString();
     }
 
-    private static Object getValue(List<String> list, int index) {
-        if (index >= list.size()) return null;
-        String entry = list.get(index);
-        int valueIdx = entry.indexOf("value=");
-        if (valueIdx == -1) return null;
-        int commaIdx = entry.indexOf(",", valueIdx);
-        if (commaIdx == -1) commaIdx = entry.indexOf("]", valueIdx);
-        if (commaIdx == -1) return null;
-        String valueStr = entry.substring(valueIdx + 6, commaIdx).trim();
-        try {
-            if (valueStr.contains(".")) return Double.parseDouble(valueStr);
-            return Long.parseLong(valueStr);
-        } catch (Exception e) {
-            return valueStr;
-        }
-    }
-
-    private static String getInstance(List<String> list, int index) {
-        if (index >= list.size()) return "";
-        String entry = list.get(index);
-        int idx = entry.indexOf("instance=");
-        if (idx == -1) return "";
-        int commaIdx = entry.indexOf(",", idx);
-        if (commaIdx == -1) commaIdx = entry.indexOf("]", idx);
-        if (commaIdx == -1) return "";
-        return entry.substring(idx + 9, commaIdx).trim();
-    }
-
-    private static String getJob(List<String> list, int index) {
-        if (index >= list.size()) return "";
-        String entry = list.get(index);
-        int idx = entry.indexOf("job=");
-        if (idx == -1) return "";
-        int commaIdx = entry.indexOf(",", idx);
-        if (commaIdx == -1) commaIdx = entry.indexOf("]", idx);
-        if (commaIdx == -1) return "";
-        return entry.substring(idx + 4, commaIdx).trim();
-    }
-
-    private static Map<String, Object> metricObj(String type, String desc, Object value, String unit) {
-        Map<String, Object> obj = new LinkedHashMap<>();
-        obj.put("type", type);
-        if (!desc.isEmpty()) obj.put("description", desc);
-        obj.put("value", value);
-        obj.put("unit", unit);
-        return obj;
+    private static Map<String, Object> metricObj(String name, String attributeName, String attributeType, String description, Object value, String unit) {
+        Map<String, Object> metric = new LinkedHashMap<>();
+        metric.put("name", name);
+        metric.put("3GPP attribute name", attributeName);
+        metric.put("3GPP attribute type", attributeType);
+        metric.put("description", description);
+        metric.put("value", value);
+        metric.put("unit", unit);
+        return metric;
     }
 }

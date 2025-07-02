@@ -1,5 +1,7 @@
 package io.nwdaf.analytics.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -44,6 +46,9 @@ public class NsiLoadLevelInfo   {
 
   @JsonProperty("timePeriod")
   private TimeWindow timePeriod = null;
+
+  @JsonProperty("resUsgThrCrossTimePeriod")
+  private List<TimeWindow> resUsgThrCrossTimePeriod = null;
 
   @JsonProperty("numOfUes")
   private NumberAverage numOfUes = null;
@@ -164,9 +169,7 @@ public class NsiLoadLevelInfo   {
   **/
   @ApiModelProperty(value = "")
   
-    public Boolean isExceedLoadLevelThrInd() {
-    return exceedLoadLevelThrInd;
-  }
+    public Boolean getExceedLoadLevelThrInd() { return exceedLoadLevelThrInd; }
 
   public void setExceedLoadLevelThrInd(Boolean exceedLoadLevelThrInd) {
     this.exceedLoadLevelThrInd = exceedLoadLevelThrInd;
@@ -211,6 +214,34 @@ public class NsiLoadLevelInfo   {
   public void setTimePeriod(TimeWindow timePeriod) {
     this.timePeriod = timePeriod;
   }
+
+  public NsiLoadLevelInfo resUsgThrCrossTimePeriod(List<TimeWindow> resUsgThrCrossTimePeriod) {
+    this.resUsgThrCrossTimePeriod = resUsgThrCrossTimePeriod;
+    return this;
+  }
+
+  public NsiLoadLevelInfo addResUsgThrCrossTimePeriod(TimeWindow resUsgThrCrossTimePeriodItem) {
+    if (this.resUsgThrCrossTimePeriod == null) {
+      this.resUsgThrCrossTimePeriod = new ArrayList<>();
+    }
+    this.resUsgThrCrossTimePeriod.add(resUsgThrCrossTimePeriodItem);
+    return this;
+  }
+
+  /**
+   * Get resUsgThrCrossTimePeriod
+   * @return resUsgThrCrossTimePeriod
+   **/
+  @ApiModelProperty(value = "")
+
+  @Size(min=1)   public List<TimeWindow> getResUsgThrCrossTimePeriod() {
+    return resUsgThrCrossTimePeriod;
+  }
+
+  public void setResUsgThrCrossTimePeriod(List<TimeWindow> resUsgThrCrossTimePeriod) {
+    this.resUsgThrCrossTimePeriod = resUsgThrCrossTimePeriod;
+  }
+
 
   public NsiLoadLevelInfo numOfUes(NumberAverage numOfUes) {
     this.numOfUes = numOfUes;

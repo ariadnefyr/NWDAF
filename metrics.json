@@ -1,987 +1,1187 @@
 {
   "dataset_name" : "5G NWDAF NSI LOAD LEVEL Dataset",
   "description" : "Dataset capturing NSI LOAD LEVEL metrics values and related metadata for 5G core network",
-  "creation_date" : "2025-06-28T17:26:07.819621200Z",
+  "creation_date" : "2025-07-02T13:03:29.237121500Z",
   "time_zone" : "UTC",
   "license" : "Creative Commons Attribution 4.0 International (CC BY 4.0)",
   "access_rights" : "public",
   "author" : "Ariadni Fyrogeni, University of Patras",
   "records" : [ {
-    "timestamp" : "2025-06-28T17:24:32.649Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:01:54.057Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0383331,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 7,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.86849,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 1,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:24:37.657Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:01:59.067Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0884742,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 4,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9544233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 2,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:01:54.057Z - 2025-07-02T13:01:59.067Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:24:42.648Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:04.057Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.1093896,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 7,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.8294233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 3,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:01:59.067Z - 2025-07-02T13:02:04.057Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:24:47.651Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:09.067Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0838869,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 5,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.8736967,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 4,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:04.057Z - 2025-07-02T13:02:09.067Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:24:52.662Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:14.061Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.1335871,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 14,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.86979,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 5,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:09.067Z - 2025-07-02T13:02:14.061Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:24:57.655Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:19.072Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0520393,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 7,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.8307267,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 6,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:14.061Z - 2025-07-02T13:02:19.072Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:02.663Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:24.065Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0555322,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 9,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.8294233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57454592,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 7,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:19.072Z - 2025-07-02T13:02:24.065Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:07.658Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:29.061Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.1370306,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 4,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9205767,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 8,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:24.065Z - 2025-07-02T13:02:29.061Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:12.663Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:34.071Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0982171,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 4,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.8346367,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 9,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:29.061Z - 2025-07-02T13:02:34.071Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:17.651Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:39.070Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0046631,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 7,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.78906,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 10,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:34.071Z - 2025-07-02T13:02:39.070Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:22.648Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:44.058Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0715131,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 2,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9088567,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 11,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:39.070Z - 2025-07-02T13:02:44.058Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:27.658Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:49.058Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0709027,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 5,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9166667,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 12,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:44.058Z - 2025-07-02T13:02:49.058Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:32.661Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:54.068Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0289105,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 10,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9986967,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 13,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:49.058Z - 2025-07-02T13:02:54.068Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:37.656Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:02:59.072Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0328519,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 10,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9166667,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 14,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:54.068Z - 2025-07-02T13:02:59.072Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:42.661Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:04.059Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
       "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0744486,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9518233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 15,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:02:59.072Z - 2025-07-02T13:03:04.059Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:47.652Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:09.062Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.1245995,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 3,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9544233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 16,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:03:04.059Z - 2025-07-02T13:03:09.062Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:52.650Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:14.059Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0602371,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 8,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.86849,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 17,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:03:09.062Z - 2025-07-02T13:03:14.059Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:25:57.649Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:19.061Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0570333,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 5,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.87109,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 18,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:03:14.059Z - 2025-07-02T13:03:19.061Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:26:02.654Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:24.060Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 6.451E-4,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 7,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.86719,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 19,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:03:19.061Z - 2025-07-02T13:03:24.060Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
     "weather_condition" : "clear"
   }, {
-    "timestamp" : "2025-06-28T17:26:07.661Z",
-    "nf_type" : "",
-    "nf_instance_id" : "smf:9090",
-    "nf_set_id" : "smf-internals",
-    "network_slice" : "",
+    "timestamp" : "2025-07-02T13:03:29.068Z",
+    "nf_type" : "SMF",
+    "nf_instance_id" : "",
+    "nf_set_id" : "",
+    "network_slice" : "class Snssai {\n    sst: 1\n    sd: 010203\n}",
     "metrics" : [ {
-      "type" : "UEs Active",
+      "name" : "s5c Rx Sessions requested to be created",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "Active UEs",
-      "description" : "Number of active UEs.",
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
       "value" : 0,
       "unit" : ""
     }, {
-      "type" : "s5c Rx Sessions requested to be created",
-      "description" : "Create Session requests received.",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU time",
-      "description" : "CPU time consumed by the process.",
-      "value" : 326,
-      "unit" : "seconds"
-    }, {
-      "type" : "Memory",
-      "description" : "Memory currently used (resident set size).",
-      "value" : 66310144,
-      "unit" : "bytes"
-    }, {
-      "type" : "UE Count",
-      "description" : "Average number of UEs connected to the gNB. ",
-      "value" : 0,
-      "unit" : ""
-    }, {
-      "type" : "CPU Percentage",
-      "description" : "Percentage of the CPU used for the procedure.",
-      "value" : 0.0593046,
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 5,
       "unit" : "%"
     }, {
-      "type" : "Memory Usage",
-      "description" : "Memory currently used in MiB.",
-      "value" : 54.9544233,
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 57462784,
       "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 20,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-02T13:03:24.060Z - 2025-07-02T13:03:29.068Z]",
+      "unit" : ""
     } ],
     "traffic_condition" : "normal",
     "event_annotation" : "none",
