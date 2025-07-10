@@ -113,7 +113,7 @@ public class PrometheusDataCollector {
         }
         resUsage.setCpuUsage(cpuUsage);
 
-        memoryUsage = parseIntSafe(MetricDataStore.memoryBytesValues, i);
+        memoryUsage = parseIntSafe(MetricDataStore.memoryUsageValues, i);
         resUsage.setMemoryUsage(memoryUsage);
 
         // StorageUsage not available, set null or 0
@@ -139,7 +139,7 @@ public class PrometheusDataCollector {
 
         // --- Threshold logic ---
         //boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 85);
-        boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 57438208);
+        boolean exceed = (cpuUsage != null && cpuUsage > 7) || (memoryUsage != null && memoryUsage > 99999999); // Example thresholds, adjust as above
         info.setExceedLoadLevelThrInd(exceed);
 
         if (exceed) {

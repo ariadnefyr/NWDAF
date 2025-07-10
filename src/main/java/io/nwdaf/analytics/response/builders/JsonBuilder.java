@@ -82,6 +82,7 @@ public class JsonBuilder {
             ));
 
             record.put("metrics", metrics);
+            record.put("experiment_id", "experiment_001");
             record.put("traffic_condition", "normal");
             record.put("event_annotation", "none");
             record.put("weather_condition", "clear");
@@ -94,8 +95,8 @@ public class JsonBuilder {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         try {
-            mapper.writeValue(new File("metrics.json"), root);
-            System.out.println("JSON file created: metrics.json");
+            mapper.writeValue(new File("nsi_load_level_metrics.json"), root);
+            System.out.println("JSON file created: nsi_load_level_metrics.json");
         } catch (IOException e) {
             e.printStackTrace();
         }

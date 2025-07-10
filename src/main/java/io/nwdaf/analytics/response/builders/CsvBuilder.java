@@ -15,9 +15,9 @@ public class CsvBuilder {
             List<NsiLoadLevelInfo> nsiLoadLevelInfos,
             int maxRows
     ) {
-        try (FileWriter writer = new FileWriter("metrics.csv")) {
-            writer.write("timestamp,cpuUsage,memoryUsage,numOfUes,numOfPduSess,confidence,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod\n");
-            //writer.write("timestamp,snssai,nsiId,cpuUsage,memoryUsage,numOfUes,numOfPduSess,confidence,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod\n");
+        try (FileWriter writer = new FileWriter("nsi_load_level_metrics.csv")) {
+            writer.write("timestamp,cpuUsage,memoryUsage,numOfUes,numOfPduSess,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod,confidence\n");
+            //writer.write("timestamp,snssai,nsiId,cpuUsage,memoryUsage,numOfUes,numOfPduSess,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod,confidence\n");
             for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
                 NsiLoadLevelInfo info = nsiLoadLevelInfos.get(i);
                 String resUsgThrCrossTimePeriodStr = "";
@@ -41,13 +41,13 @@ public class CsvBuilder {
                         (info.getResUsage() != null && info.getResUsage().getMemoryUsage() != null ? info.getResUsage().getMemoryUsage() : "") + "," +
                         (info.getNumOfUes() != null && info.getNumOfUes().getNumber() != null ? info.getNumOfUes().getNumber() : "") + "," +
                         (info.getNumOfPduSess() != null && info.getNumOfPduSess().getNumber() != null ? info.getNumOfPduSess().getNumber() : "") + "," +
-                        (info.getConfidence() != null ? info.getConfidence() : "") + "," +
                         (info.getNumOfExceedLoadLevelThr() != null ? info.getNumOfExceedLoadLevelThr() : "") + "," +
                         (info.getExceedLoadLevelThrInd() != null ? info.getExceedLoadLevelThrInd() : "") + "," +
-                        "\"" + resUsgThrCrossTimePeriodStr + "\"" + "\n"
+                        "\"" + resUsgThrCrossTimePeriodStr + "\"" + "," +
+                        (info.getConfidence() != null ? info.getConfidence() : "") + "," + "\n"
                 );
             }
-            System.out.println("CSV file created: metrics.csv");
+            System.out.println("CSV file created: nsi_load_level_metrics.csv");
         } catch (IOException e) {
             e.printStackTrace();
         }
