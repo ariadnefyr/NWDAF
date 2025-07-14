@@ -26,6 +26,7 @@ public class Swagger2SpringBoot implements CommandLineRunner {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Swagger2SpringBoot.class, args);
         new io.nwdaf.analytics.util.PrometheusDataCollector().startCollecting();
+        System.out.println("NWDAF Analytics API is running. Metrics for the dataset are being collected...");
     }
 
     class ExitException extends RuntimeException implements ExitCodeGenerator {

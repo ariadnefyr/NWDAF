@@ -47,13 +47,13 @@ public class MetricFetcher {
     // Fetch "netdata_cgroup_cpu_percentage_average" of instance "Compute006"
     public static void fetchCpuPercentage(String serverIp) {
         //String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22Compute006%22%7D");
-        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_a912d49644ed.cpu%22%2C%20dimension%3D%22system%22%7D");
+        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_db21c4a1a546.cpu%22%2C%20dimension%3D%22system%22%7D");
         extractValues(response, MetricDataStore.cpuPercentageValues);
     }
 
     // Fetch "netdata_cgroup_mem_usage_MiB_average" of instance "Compute006"
     public static void fetchMemoryUsage(String serverIp) {
-        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_mem_usage_MiB_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_a912d49644ed.mem_usage%22%2C%20dimension%3D%22ram%22%7D");
+        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_mem_usage_MiB_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_db21c4a1a546.mem_usage%22%2C%20dimension%3D%22ram%22%7D");
         extractValues(response, MetricDataStore.memoryUsageValues);
     }
 

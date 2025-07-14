@@ -26,6 +26,12 @@ public class JsonBuilder {
         root.put("author", "Ariadni Fyrogeni, University of Patras");
 
         List<Map<String, Object>> records = new ArrayList<>();
+        // For event_annotation logic, keep track of previous CPU/mem and resource_exceeded duration
+        Integer prevCpu = null;
+        Integer prevMem = null;
+        int resourceExceededCount = 0;
+        final int RESOURCE_EXCEEDED_THRESHOLD = 3; // e.g., 3 consecutive records = X minutes
+
         for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
             NsiLoadLevelInfo info = nsiLoadLevelInfos.get(i);
 
@@ -34,7 +40,8 @@ public class JsonBuilder {
             record.put("nf_type", "SMF");
             record.put("nf_instance_id", ""); // Fill as needed
             record.put("nf_set_id", ""); // Fill as needed
-            record.put("network_slice", info.getSnssai() != null ? info.getSnssai().toString() : "");
+            //record.put("network_slice", info.getSnssai() != null ? info.getSnssai().toString() : "");
+            record.put("network_slice", "{sst: 1, sd: 0}"); // Example SNSSAI
 
             List<Map<String, Object>> metrics = new ArrayList<>();
             /*metrics.add(metricObj("Active UEs", "", "", "Number of active UEs.",
@@ -83,9 +90,65 @@ public class JsonBuilder {
 
             record.put("metrics", metrics);
             record.put("experiment_id", "experiment_001");
-            record.put("traffic_condition", "normal");
-            record.put("event_annotation", "none");
-            record.put("weather_condition", "clear");
+
+            // Dynamically set nsi_load_condition based on cpuUsage and memoryUsage
+            String nsiLoadCondition = "low";
+            Integer cpu = info.getResUsage() != null ? info.getResUsage().getCpuUsage() : null;
+            Integer mem = info.getResUsage() != null ? info.getResUsage().getMemoryUsage() : null;
+            int cpuVal = cpu != null ? cpu : 0;
+            int memVal = mem != null ? mem : 0;
+            int maxVal = Math.max(cpuVal, memVal);
+
+            if (maxVal <= 40) {
+                nsiLoadCondition = "low";
+            } else if (maxVal <= 70) {
+                nsiLoadCondition = "moderate";
+            } else if (maxVal <= 85) {
+                nsiLoadCondition = "high";
+            } else {
+                nsiLoadCondition = "critical";
+            }
+            // Add nsi_load_condition as an object with value and description
+            Map<String, Object> nsiLoadConditionObj = new LinkedHashMap<>();
+            nsiLoadConditionObj.put("value", nsiLoadCondition);
+            nsiLoadConditionObj.put("description", "Describes the overall network resource load based on CPU and memory utilization. It is categorized as low, moderate, high or critical depending on average usage thresholds.");
+            record.put("nsi_load_condition", nsiLoadConditionObj);
+
+            // --- event_annotation logic ---
+            String eventValue = "none";
+            // Check for spike_detected
+            if (prevCpu != null && prevMem != null) {
+                if (Math.abs(cpuVal - prevCpu) > 30 || Math.abs(memVal - prevMem) > 30) {
+                    if ((cpuVal - prevCpu) > 30 || (memVal - prevMem) > 30) {
+                        eventValue = "spike_detected";
+                    } else if ((prevCpu - cpuVal) > 30 || (prevMem - memVal) > 30) {
+                        eventValue = "drop_detected";
+                    }
+                }
+            }
+            // Check for resource_exceeded (CPU or mem > 90% for X consecutive records)
+            if (cpuVal > 90 || memVal > 90) {
+                resourceExceededCount++;
+                if (resourceExceededCount >= RESOURCE_EXCEEDED_THRESHOLD) {
+                    eventValue = "resource_exceeded";
+                }
+            } else {
+                resourceExceededCount = 0;
+            }
+
+            Map<String, Object> eventAnnotationObj = new LinkedHashMap<>();
+            eventAnnotationObj.put("value", eventValue);
+            eventAnnotationObj.put("description", "Tags notable changes or patterns in system load, such as spikes, anomalies, or maintenance events. Used for identifying exceptional network behavior.");
+            record.put("event_annotation", eventAnnotationObj);
+
+            prevCpu = cpuVal;
+            prevMem = memVal;
+
+            // Add environment_type as an object with value and description
+            Map<String, Object> environmentTypeObj = new LinkedHashMap<>();
+            environmentTypeObj.put("value", "indoor_lab"); // indoor_lab or indoor_office or outdoor_space
+            environmentTypeObj.put("description", "Describes the physical context in which the network system is operating and the experiment is taking place (e.g., indoor lab, outdoor scape). Useful for analyzing how environmental factors affect performance and load.");
+            record.put("environment_type", environmentTypeObj);
 
             records.add(record);
         }
