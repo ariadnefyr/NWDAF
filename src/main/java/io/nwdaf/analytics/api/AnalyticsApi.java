@@ -71,7 +71,8 @@ public interface AnalyticsApi {
 			@ApiParam(value = "Identifies the analytics reporting requirement information.") @Valid @RequestParam(value = "ana-req", required = false) String anaReq,
 			@ApiParam(value = "Identify the analytics.") @Valid @RequestParam(value = "event-filter", required = false) String eventFilter,
 			@ApiParam(value = "To filter irrelevant responses related to unsupported features") @Valid @RequestParam(value = "supported-features", required = false) String supportedFeatures,
-			@ApiParam(value = "Identify the target UE information.") @Valid @RequestParam(value = "tgt-ue", required = false) String tgtUe
+			@ApiParam(value = "Identify the target UE information.") @Valid @RequestParam(value = "tgt-ue", required = false) String tgtUe,
+            @ApiParam(value = "Create Dataset with the NWDAF metrics") @Valid @RequestParam(value = "create-dataset", required = false) String createDataset
 	) {
         if (getObjectMapper().isPresent() && getAcceptHeader().isPresent()) {
             if (getAcceptHeader().get().contains("application/json")) {
@@ -137,11 +138,17 @@ public interface AnalyticsApi {
 
                     List<NfLoadLevelInformation> nfLoadLevelInformation = new NfLoadLevelResponseBuilder().nfLoadLevelInformation(givenEventFilter, givenTgtUe);
 
-                    System.out.println("nfLoadLevelInformation method called with:");
-                    System.out.println("Filter: " + eventFilter);
-                    System.out.println("Target UE: " + tgtUe);
+                    //System.out.println("nfLoadLevelInformation method called with:");
+                    //System.out.println("Filter: " + eventFilter);
+                    //System.out.println("Target UE: " + tgtUe);
 
                     responseBuilder.setNfLoadLevelInfos(nfLoadLevelInformation);
+                }
+
+                if (createDataset != null && createDataset.equals("true")) {
+                    log.info("Creating dataset with NWDAF metrics");
+                    new io.nwdaf.analytics.util.PrometheusDataCollector().startCollecting();
+                    System.out.println("NWDAF Analytics API is running. Metrics for the dataset are being collected...");
                 }
 
                 return new ResponseEntity<>(responseBuilder, HttpStatus.OK);

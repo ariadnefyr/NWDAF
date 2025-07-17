@@ -12,18 +12,12 @@ public class MetricFetcher {
     public static void fetchRanUe(String serverIp) {
         String response = PrometheusClient.queryMetric(serverIp, "ran_ue");
         extractValues(response, MetricDataStore.ranUeValues);
-    }*/
+    }
 
     // Fetch "ues_active"
     public static void fetchUesActive(String serverIp) {
         String response = PrometheusClient.queryMetric(serverIp, "ues_active");
         extractValues(response, MetricDataStore.uesActiveValues);
-    }
-
-    // Fetch "s5c_rx_createsession"
-    public static void fetchS5cRxCreateSession(String serverIp) {
-        String response = PrometheusClient.queryMetric(serverIp, "s5c_rx_createsession");
-        extractValues(response, MetricDataStore.s5cRxCreateSessionValues);
     }
 
     // Fetch "process_cpu_seconds_total"
@@ -38,22 +32,35 @@ public class MetricFetcher {
         extractValues(response, MetricDataStore.memoryBytesValues);
     }
 
+    // Fetch "s5c_rx_createsession"
+    public static void fetchS5cRxCreateSession(String serverIp) {
+        String response = PrometheusClient.queryMetric(serverIp, "s5c_rx_createsession");
+        extractValues(response, MetricDataStore.s5cRxCreateSessionValues);
+    }
+    */
+
+    // Fetch "ng_pdu_session_resource_setup_response"
+    public static void fetchNgPduSessionResourceSetupResponse(String serverIp) {
+        String response = PrometheusClient.queryMetric(serverIp, "ng_pdu_session_resource_setup_response");
+        extractValues(response, MetricDataStore.NgPduSessionResourceSetupResponseValues);
+    }
+
     // Fetch "ue_count"
     public static void fetchUeCount(String serverIp) {
-        String response = PrometheusClient.queryMetric(serverIp, "ue_count%7Binstance%3D%22172.16.10.202:52000%22%7D");
+        String response = PrometheusClient.queryMetric(serverIp, "ue_count%7Bjob%3D%22EAST_monitor%22%7D");
         extractValues(response, MetricDataStore.ueCountValues);
     }
 
     // Fetch "netdata_cgroup_cpu_percentage_average" of instance "Compute006"
     public static void fetchCpuPercentage(String serverIp) {
         //String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22Compute006%22%7D");
-        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_db21c4a1a546.cpu%22%2C%20dimension%3D%22system%22%7D");
+        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Bjob%3D%22MuseumEast(202)_average%22%2C%20dimension%3D%22system%22%7D");
         extractValues(response, MetricDataStore.cpuPercentageValues);
     }
 
     // Fetch "netdata_cgroup_mem_usage_MiB_average" of instance "Compute006"
     public static void fetchMemoryUsage(String serverIp) {
-        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_mem_usage_MiB_average%7Binstance%3D%22172.16.10.202:19999%22%2C%20chart%3D%22cgroup_db21c4a1a546.mem_usage%22%2C%20dimension%3D%22ram%22%7D");
+        String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_mem_usage_MiB_average%7Bdimension%3D%22ram%22%7D");
         extractValues(response, MetricDataStore.memoryUsageValues);
     }
 

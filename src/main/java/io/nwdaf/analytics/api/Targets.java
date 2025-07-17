@@ -9,6 +9,7 @@ public class Targets {
 
 	private String universityOfPatrasPrometheus = "http://150.140.195.195:9090";
 	private String open5GSPrometheus = "http://localhost:9090";
+	private String allMetricsPrometheus = "http://172.16.100.128:29090";
 
 	private String masterNode = "http://150.140.195.195:19999";
 	
@@ -60,5 +61,13 @@ public class Targets {
 
 	public void setOpen5GSPrometheus(String open5GSPrometheus) {
 		this.open5GSPrometheus = open5GSPrometheus;
+	}
+
+	public String getAllMetricsPrometheus() {
+		return allMetricsPrometheus;
+	}
+
+	public void setAllMetricsPrometheus(String allMetricsPrometheus) {
+		this.allMetricsPrometheus = allMetricsPrometheus;
 	}
 }

@@ -19,7 +19,7 @@ import java.time.ZoneOffset;
 
 public class PrometheusDataCollector {
 
-    private static final int MAX_VALUES = 20;
+    private static final int MAX_VALUES = 100;
     private static final int INTERVAL_SEC = 5;
     private final List<Long> timestamps = new ArrayList<>();
     private final List<NsiLoadLevelInfo> nsiLoadLevelInfos = new ArrayList<>();
@@ -32,19 +32,21 @@ public class PrometheusDataCollector {
 
         String server_uop = new Targets().getUniversityOfPatrasPrometheus();
         String server_5GS = new Targets().getOpen5GSPrometheus();
+        String server_all_metrics = new Targets().getAllMetricsPrometheus();
 
         Runnable fetchTask = () -> {
             long now = System.currentTimeMillis();
             timestamps.add(now);
 
-            MetricFetcher.fetchUesActive(server_5GS);
-            MetricFetcher.fetchS5cRxCreateSession(server_5GS);
-            MetricFetcher.fetchCpuSeconds(server_5GS);
-            MetricFetcher.fetchMemoryBytes(server_5GS);
+            //MetricFetcher.fetchUesActive(server_5GS);
+            //MetricFetcher.fetchCpuSeconds(server_5GS);
+            //MetricFetcher.fetchMemoryBytes(server_5GS);
 
-            MetricFetcher.fetchUeCount(server_uop);
-            MetricFetcher.fetchCpuPercentage(server_uop);
-            MetricFetcher.fetchMemoryUsage(server_uop);
+            MetricFetcher.fetchNgPduSessionResourceSetupResponse(server_all_metrics);
+
+            MetricFetcher.fetchUeCount(server_all_metrics);
+            MetricFetcher.fetchCpuPercentage(server_all_metrics);
+            MetricFetcher.fetchMemoryUsage(server_all_metrics);
 
             if (allMetricsCollected()) {
                 scheduler.shutdown();
@@ -84,13 +86,15 @@ public class PrometheusDataCollector {
     }
 
     private boolean allMetricsCollected() {
-        return MetricDataStore.uesActiveValues.size() >= MAX_VALUES &&
-                MetricDataStore.s5cRxCreateSessionValues.size() >= MAX_VALUES &&
-                MetricDataStore.cpuSecondsValues.size() >= MAX_VALUES &&
-                MetricDataStore.memoryBytesValues.size() >= MAX_VALUES &&
+        return MetricDataStore.NgPduSessionResourceSetupResponseValues.size() >= MAX_VALUES &&
                 MetricDataStore.ueCountValues.size() >= MAX_VALUES &&
                 MetricDataStore.cpuPercentageValues.size() >= MAX_VALUES &&
-                MetricDataStore.memoryUsageValues.size() >= MAX_VALUES;
+                MetricDataStore.memoryUsageValues.size() >= MAX_VALUES ;
+
+                /*MetricDataStore.s5cRxCreateSessionValues.size() >= MAX_VALUES &&
+                MetricDataStore.uesActiveValues.size() >= MAX_VALUES &&
+                MetricDataStore.cpuSecondsValues.size() >= MAX_VALUES &&
+                MetricDataStore.memoryBytesValues.size() >= MAX_VALUES &&*/
     }
 
     // Map Prometheus metrics to NWDAF model objects for a given index
@@ -113,7 +117,10 @@ public class PrometheusDataCollector {
         }
         resUsage.setCpuUsage(cpuUsage);
 
-        memoryUsage = parseIntSafe(MetricDataStore.memoryUsageValues, i);
+        Double memoryUsageRaw = parseDoubleSafe(MetricDataStore.memoryUsageValues, i);
+        if (memoryUsageRaw != null) {
+            memoryUsage = (int) (memoryUsageRaw / 0.16);
+        }
         resUsage.setMemoryUsage(memoryUsage);
 
         // StorageUsage not available, set null or 0
@@ -127,7 +134,7 @@ public class PrometheusDataCollector {
         info.setNumOfUes(numOfUes);
 
         NumberAverage numOfPduSess = new NumberAverage();
-        numOfPduSess.setNumber(parseIntSafe(MetricDataStore.s5cRxCreateSessionValues, i));
+        numOfPduSess.setNumber(parseIntSafe(MetricDataStore.NgPduSessionResourceSetupResponseValues, i));
         numOfPduSess.setVariance(0f);
         info.setNumOfPduSess(numOfPduSess);
 
@@ -139,7 +146,7 @@ public class PrometheusDataCollector {
 
         // --- Threshold logic ---
         //boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 85);
-        boolean exceed = (cpuUsage != null && cpuUsage > 7) || (memoryUsage != null && memoryUsage > 99999999); // Example thresholds, adjust as above
+        boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 95); // Example thresholds, adjust as above
         info.setExceedLoadLevelThrInd(exceed);
 
         if (exceed) {

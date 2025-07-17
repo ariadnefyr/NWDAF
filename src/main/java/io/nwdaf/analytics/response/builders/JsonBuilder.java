@@ -50,7 +50,7 @@ public class JsonBuilder {
                 info.getResUsage() != null && info.getResUsage().getCpuUsage() != null ? info.getResUsage().getCpuUsage() : "", "seconds"));
             metrics.add(metricObj("Memory", "", "", "Memory currently used (resident set size).",
                 info.getResUsage() != null && info.getResUsage().getMemoryUsage() != null ? info.getResUsage().getMemoryUsage() : "", "bytes"));*/
-            metrics.add(metricObj("s5c Rx Sessions requested to be created", "numOfPduSess", "NumberAverage", "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
+            metrics.add(metricObj("NG PDU Sessions Resource Setup Response", "numOfPduSess", "NumberAverage", "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
                     info.getNumOfPduSess() != null && info.getNumOfPduSess().getNumber() != null ? info.getNumOfPduSess().getNumber() : "", ""));
             metrics.add(metricObj("UE Count", "numOfUes", "NumberAverage", "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
                 info.getNumOfUes() != null && info.getNumOfUes().getNumber() != null ? info.getNumOfUes().getNumber() : "", ""));

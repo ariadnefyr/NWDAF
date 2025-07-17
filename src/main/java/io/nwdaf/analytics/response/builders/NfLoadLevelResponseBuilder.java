@@ -31,7 +31,7 @@ public class NfLoadLevelResponseBuilder {
 		List <NfLoadLevelInformation> nfLoadLevelInformation = new ArrayList<NfLoadLevelInformation>();
 
 		Boolean anyUe = tgtUe.isAnyUe();
-		System.out.println("anyUe: " + anyUe);
+		//System.out.println("anyUe: " + anyUe);
 		if(anyUe) {
 			//Find all the UEs of the given area
 			//String command = "curl http://150.140.195.253:9090/api/v1/query?query=netdata_UE_STATS_GNODEB_bps_average -o /home/gctz/Desktop/Diplwmatikh/Multi_TS/Analytics_info/prometheus_yaml_files/test.json";
@@ -92,10 +92,10 @@ public class NfLoadLevelResponseBuilder {
 									nfLoadLevelInformation.add(currentNfLoadLevelInfos);
 
 									// Optional: log what you're adding
-									System.out.println("Added chart: " + chartName + ", CPU: " + cpuUsage + "%");
-								} else {
+									//System.out.println("Added chart: " + chartName + ", CPU: " + cpuUsage + "%");
+								} /*else {
 									System.out.println("Skipped chart: " + chartName + ", CPU: " + cpuUsage + "% (zero load)");
-								}
+								}*/
 
 							} catch (NumberFormatException e) {
 								System.err.println("Invalid CPU value: " + valueStr);

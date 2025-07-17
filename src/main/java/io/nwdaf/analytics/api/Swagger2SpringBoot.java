@@ -1,8 +1,5 @@
 package io.nwdaf.analytics.api;
 
-import io.nwdaf.analytics.util.MetricFetcher;
-import io.nwdaf.analytics.util.MetricDataStore;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
@@ -25,8 +22,8 @@ public class Swagger2SpringBoot implements CommandLineRunner {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Swagger2SpringBoot.class, args);
-        new io.nwdaf.analytics.util.PrometheusDataCollector().startCollecting();
-        System.out.println("NWDAF Analytics API is running. Metrics for the dataset are being collected...");
+        //new io.nwdaf.analytics.util.PrometheusDataCollector().startCollecting();
+        //System.out.println("NWDAF Analytics API is running. Metrics for the dataset are being collected...");
     }
 
     class ExitException extends RuntimeException implements ExitCodeGenerator {
