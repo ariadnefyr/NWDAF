@@ -20,6 +20,13 @@ public class JsonBuilder {
         root.put("dataset_name", "5G NWDAF NSI LOAD LEVEL Dataset");
         root.put("description", "Dataset capturing NSI LOAD LEVEL metrics values and related metadata for 5G core network");
         root.put("creation_date", Instant.now().toString());
+        String timePeriod = "";
+        if (timestamps != null && !timestamps.isEmpty()) {
+            String start = java.time.Instant.ofEpochMilli(timestamps.get(0)).toString();
+            String end = java.time.Instant.ofEpochMilli(timestamps.get(timestamps.size() - 1)).toString();
+            timePeriod = "[" + start + " - " + end + "]";
+        }
+        root.put("time_period", timePeriod);
         root.put("time_zone", "UTC");
         root.put("license", "Creative Commons Attribution 4.0 International (CC BY 4.0)");
         root.put("access_rights", "public");
@@ -32,15 +39,17 @@ public class JsonBuilder {
         int resourceExceededCount = 0;
         final int RESOURCE_EXCEEDED_THRESHOLD = 3; // e.g., 3 consecutive records = X minutes
 
+        String experimentId = UUID.randomUUID().toString();
+
         for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
             NsiLoadLevelInfo info = nsiLoadLevelInfos.get(i);
 
             Map<String, Object> record = new LinkedHashMap<>();
             record.put("timestamp", getTimestamp(timestamps, i));
-            record.put("nf_type", "SMF");
-            record.put("nf_instance_id", ""); // Fill as needed
-            record.put("nf_set_id", ""); // Fill as needed
-            //record.put("network_slice", info.getSnssai() != null ? info.getSnssai().toString() : "");
+            /* record.put("nf_type", "SMF");
+            record.put("nf_instance_id", "");
+            record.put("nf_set_id", "");
+            record.put("network_slice", info.getSnssai() != null ? info.getSnssai().toString() : ""); */
             record.put("network_slice", "{sst: 1, sd: 0}"); // Example SNSSAI
 
             List<Map<String, Object>> metrics = new ArrayList<>();
@@ -89,7 +98,8 @@ public class JsonBuilder {
             ));
 
             record.put("metrics", metrics);
-            record.put("experiment_id", "experiment_001");
+            record.put("experiment_name", "experiment_001");
+            record.put("experiment_id", experimentId);
 
             // Dynamically set nsi_load_condition based on cpuUsage and memoryUsage
             String nsiLoadCondition = "low";
@@ -154,12 +164,18 @@ public class JsonBuilder {
         }
         root.put("records", records);
 
+        String timestamp = java.time.format.DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss")
+                .withZone(java.time.ZoneOffset.UTC)
+                .format(java.time.Instant.now());
+
+        String fileName = "nsi_load_level_metrics_" + timestamp + ".json";
+
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         try {
-            mapper.writeValue(new File("nsi_load_level_metrics.json"), root);
-            System.out.println("JSON file created: nsi_load_level_metrics.json");
+            mapper.writeValue(new File(fileName), root);
+            System.out.println("JSON file created: " + fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }

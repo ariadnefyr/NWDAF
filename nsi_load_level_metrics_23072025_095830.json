@@ -1,0 +1,145 @@
+{
+  "dataset_name" : "5G NWDAF NSI LOAD LEVEL Dataset",
+  "description" : "Dataset capturing NSI LOAD LEVEL metrics values and related metadata for 5G core network",
+  "creation_date" : "2025-07-23T09:58:30.656381Z",
+  "time_period" : "[2025-07-23T09:58:25.608Z - 2025-07-23T09:58:30.615Z]",
+  "time_zone" : "UTC",
+  "license" : "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "access_rights" : "public",
+  "author" : "Ariadni Fyrogeni, University of Patras",
+  "records" : [ {
+    "timestamp" : "2025-07-23T09:58:25.608Z",
+    "network_slice" : "{sst: 1, sd: 0}",
+    "metrics" : [ {
+      "name" : "NG PDU Sessions Resource Setup Response",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
+      "value" : 4,
+      "unit" : ""
+    }, {
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 3,
+      "unit" : "%"
+    }, {
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 94,
+      "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 1,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "",
+      "unit" : ""
+    } ],
+    "experiment_name" : "experiment_001",
+    "experiment_id" : "f656b24b-29c6-44e9-8a05-ace686353a2f",
+    "nsi_load_condition" : {
+      "value" : "critical",
+      "description" : "Describes the overall network resource load based on CPU and memory utilization. It is categorized as low, moderate, high or critical depending on average usage thresholds."
+    },
+    "event_annotation" : {
+      "value" : "none",
+      "description" : "Tags notable changes or patterns in system load, such as spikes, anomalies, or maintenance events. Used for identifying exceptional network behavior."
+    },
+    "environment_type" : {
+      "value" : "indoor_lab",
+      "description" : "Describes the physical context in which the network system is operating and the experiment is taking place (e.g., indoor lab, outdoor scape). Useful for analyzing how environmental factors affect performance and load."
+    }
+  }, {
+    "timestamp" : "2025-07-23T09:58:30.615Z",
+    "network_slice" : "{sst: 1, sd: 0}",
+    "metrics" : [ {
+      "name" : "NG PDU Sessions Resource Setup Response",
+      "3GPP attribute name" : "numOfPduSess",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of PDU session established at the S-NSSAI and the optionally associated network slice instance.",
+      "value" : 4,
+      "unit" : ""
+    }, {
+      "name" : "UE Count",
+      "3GPP attribute name" : "numOfUes",
+      "3GPP attribute type" : "NumberAverage",
+      "description" : "Indicates the average and variance number of UE registered at the S-NSSAI and the optionally associated network slice instance.",
+      "value" : 0,
+      "unit" : ""
+    }, {
+      "name" : "CPU Percentage",
+      "3GPP attribute name" : "cpuUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of virtual CPU.",
+      "value" : 0,
+      "unit" : "%"
+    }, {
+      "name" : "Memory Usage",
+      "3GPP attribute name" : "memoryUsage",
+      "3GPP attribute type" : "Uinteger",
+      "description" : "Average usage of memory, in MiB.",
+      "value" : 94,
+      "unit" : "MiB"
+    }, {
+      "name" : "Number of Exceed Load Level Threshold",
+      "3GPP attribute name" : "numOfExceedLoadLevelThr",
+      "3GPP attribute type" : "integer",
+      "description" : "Indicates the number of times the resource usage threshold of the network slice instance is reached or exceeded if a threshold value is provided by the consumer.",
+      "value" : 2,
+      "unit" : ""
+    }, {
+      "name" : "Exceed Load Level Threshold Indicator",
+      "3GPP attribute name" : "exceedLoadLevelThrInd",
+      "3GPP attribute type" : "Boolean",
+      "description" : "Indicates whether the Load Level Threshold is met or exceeded by the statistics value.",
+      "value" : true,
+      "unit" : ""
+    }, {
+      "name" : "Resource Usage Threshold Cross Time Period",
+      "3GPP attribute name" : "resUsgThrCrossTimePeriod",
+      "3GPP attribute type" : "array(TimeWindow)",
+      "description" : "Each element indicates the time elapsed between times each threshold is met or exceeded or crossed. The start time and end time are the exact time stamps of the resource usage threshold is reached or exceeded.",
+      "value" : "[2025-07-23T09:58:25.608Z - 2025-07-23T09:58:30.615Z]",
+      "unit" : ""
+    } ],
+    "experiment_name" : "experiment_001",
+    "experiment_id" : "f656b24b-29c6-44e9-8a05-ace686353a2f",
+    "nsi_load_condition" : {
+      "value" : "critical",
+      "description" : "Describes the overall network resource load based on CPU and memory utilization. It is categorized as low, moderate, high or critical depending on average usage thresholds."
+    },
+    "event_annotation" : {
+      "value" : "none",
+      "description" : "Tags notable changes or patterns in system load, such as spikes, anomalies, or maintenance events. Used for identifying exceptional network behavior."
+    },
+    "environment_type" : {
+      "value" : "indoor_lab",
+      "description" : "Describes the physical context in which the network system is operating and the experiment is taking place (e.g., indoor lab, outdoor scape). Useful for analyzing how environmental factors affect performance and load."
+    }
+  } ]
+}

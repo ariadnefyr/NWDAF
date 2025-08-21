@@ -37,12 +37,18 @@ public class MetricFetcher {
         String response = PrometheusClient.queryMetric(serverIp, "s5c_rx_createsession");
         extractValues(response, MetricDataStore.s5cRxCreateSessionValues);
     }
-    */
 
     // Fetch "ng_pdu_session_resource_setup_response"
     public static void fetchNgPduSessionResourceSetupResponse(String serverIp) {
         String response = PrometheusClient.queryMetric(serverIp, "ng_pdu_session_resource_setup_response");
         extractValues(response, MetricDataStore.NgPduSessionResourceSetupResponseValues);
+    }
+    */
+
+    // Fetch "fivegs_smffunction_sm_pdusessioncreationsucc"
+    public static void fetchFivegsSmffunctionPdusessionCreationSucc(String serverIp) {
+        String response = PrometheusClient.queryMetric(serverIp, "fivegs_smffunction_sm_pdusessioncreationsucc");
+        extractValues(response, MetricDataStore.FivegsSmffunctionPdusessionCreationSuccValues);
     }
 
     // Fetch "ue_count"
@@ -51,14 +57,14 @@ public class MetricFetcher {
         extractValues(response, MetricDataStore.ueCountValues);
     }
 
-    // Fetch "netdata_cgroup_cpu_percentage_average" of instance "Compute006"
+    // Fetch "netdata_cgroup_cpu_percentage_average"
     public static void fetchCpuPercentage(String serverIp) {
         //String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Binstance%3D%22Compute006%22%7D");
         String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_cpu_percentage_average%7Bjob%3D%22MuseumEast(202)_average%22%2C%20dimension%3D%22system%22%7D");
         extractValues(response, MetricDataStore.cpuPercentageValues);
     }
 
-    // Fetch "netdata_cgroup_mem_usage_MiB_average" of instance "Compute006"
+    // Fetch "netdata_cgroup_mem_usage_MiB_average"
     public static void fetchMemoryUsage(String serverIp) {
         String response = PrometheusClient.queryMetric(serverIp, "netdata_cgroup_mem_usage_MiB_average%7Bdimension%3D%22ram%22%7D");
         extractValues(response, MetricDataStore.memoryUsageValues);

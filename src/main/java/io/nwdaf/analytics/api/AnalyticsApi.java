@@ -72,7 +72,7 @@ public interface AnalyticsApi {
 			@ApiParam(value = "Identify the analytics.") @Valid @RequestParam(value = "event-filter", required = false) String eventFilter,
 			@ApiParam(value = "To filter irrelevant responses related to unsupported features") @Valid @RequestParam(value = "supported-features", required = false) String supportedFeatures,
 			@ApiParam(value = "Identify the target UE information.") @Valid @RequestParam(value = "tgt-ue", required = false) String tgtUe,
-            @ApiParam(value = "Create Dataset with the NWDAF metrics") @Valid @RequestParam(value = "create-dataset", required = false) String createDataset
+            @ApiParam(value = "Create Dataset with the NWDAF metrics") @Valid @RequestParam(value = "create-dataset", required = false) Boolean createDataset
 	) {
         if (getObjectMapper().isPresent() && getAcceptHeader().isPresent()) {
             if (getAcceptHeader().get().contains("application/json")) {
@@ -145,10 +145,20 @@ public interface AnalyticsApi {
                     responseBuilder.setNfLoadLevelInfos(nfLoadLevelInformation);
                 }
 
-                if (createDataset != null && createDataset.equals("true")) {
+                if (requestedEventId.getEventId().equals("NSI_LOAD_LEVEL") && createDataset != null && createDataset) {
                     log.info("Creating dataset with NWDAF metrics");
                     new io.nwdaf.analytics.util.PrometheusDataCollector().startCollecting();
                     System.out.println("NWDAF Analytics API is running. Metrics for the dataset are being collected...");
+
+                    if(eventFilter == null) {
+                        log.error("eventFilter is null");
+                        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                    }else{
+                        log.info("starting to prepare answer for NSI_LOAD_LEVEL");
+                    }
+
+                    List<NfLoadLevelInformation> nfLoadLevelInformation = new NfLoadLevelResponseBuilder().nfLoadLevelInformation(givenEventFilter, givenTgtUe);
+                    responseBuilder.setNfLoadLevelInfos(nfLoadLevelInformation);
                 }
 
                 return new ResponseEntity<>(responseBuilder, HttpStatus.OK);

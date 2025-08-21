@@ -19,7 +19,7 @@ import java.time.ZoneOffset;
 
 public class PrometheusDataCollector {
 
-    private static final int MAX_VALUES = 100;
+    private static final int MAX_VALUES = 60;
     private static final int INTERVAL_SEC = 5;
     private final List<Long> timestamps = new ArrayList<>();
     private final List<NsiLoadLevelInfo> nsiLoadLevelInfos = new ArrayList<>();
@@ -41,20 +41,28 @@ public class PrometheusDataCollector {
             //MetricFetcher.fetchUesActive(server_5GS);
             //MetricFetcher.fetchCpuSeconds(server_5GS);
             //MetricFetcher.fetchMemoryBytes(server_5GS);
+            //MetricFetcher.fetchS5cRxCreateSession(server_5GS);
+            //MetricFetcher.fetchNgPduSessionResourceSetupResponse(server_all_metrics);
 
-            MetricFetcher.fetchNgPduSessionResourceSetupResponse(server_all_metrics);
-
+            MetricFetcher.fetchFivegsSmffunctionPdusessionCreationSucc(server_5GS);
             MetricFetcher.fetchUeCount(server_all_metrics);
             MetricFetcher.fetchCpuPercentage(server_all_metrics);
             MetricFetcher.fetchMemoryUsage(server_all_metrics);
 
             if (allMetricsCollected()) {
                 scheduler.shutdown();
+                System.out.println("All metrics collected, processing data...");
 
                 // Map Prometheus metrics to NWDAF model objects
                 nsiLoadLevelInfos.clear();
                 for (int i = 0; i < MAX_VALUES; i++) {
-                    nsiLoadLevelInfos.add(mapToNsiLoadLevelInfo(i));
+                    try {
+                        nsiLoadLevelInfos.add(mapToNsiLoadLevelInfo(i));
+                        System.out.println("Mapped NsiLoadLevelInfo for index " + i);
+                    } catch (Exception e) {
+                        System.err.println("Exception in mapToNsiLoadLevelInfo at i=" + i + ": " + e.getMessage());
+                        e.printStackTrace();
+                    }
                 }
 
                 // Calculate resUsgThrCrossTimePeriod for each crossing
@@ -77,8 +85,19 @@ public class PrometheusDataCollector {
                     nsiLoadLevelInfos.get(idx).setResUsgThrCrossTimePeriod(twList);
                 }
 
+                System.out.println("Writing CSV...");
                 CsvBuilder.writeCsv(timestamps, nsiLoadLevelInfos, MAX_VALUES);
+
+                System.out.println("Writing JSON...");
                 JsonBuilder.writeJson(timestamps, nsiLoadLevelInfos, MAX_VALUES);
+
+                // Clear lists for next run
+                MetricDataStore.ueCountValues.clear();
+                MetricDataStore.cpuPercentageValues.clear();
+                MetricDataStore.memoryUsageValues.clear();
+                MetricDataStore.FivegsSmffunctionPdusessionCreationSuccValues.clear();
+                timestamps.clear();
+                nsiLoadLevelInfos.clear();
             }
         };
 
@@ -86,12 +105,14 @@ public class PrometheusDataCollector {
     }
 
     private boolean allMetricsCollected() {
-        return MetricDataStore.NgPduSessionResourceSetupResponseValues.size() >= MAX_VALUES &&
+        return MetricDataStore.FivegsSmffunctionPdusessionCreationSuccValues.size() >= MAX_VALUES &&
                 MetricDataStore.ueCountValues.size() >= MAX_VALUES &&
                 MetricDataStore.cpuPercentageValues.size() >= MAX_VALUES &&
                 MetricDataStore.memoryUsageValues.size() >= MAX_VALUES ;
 
-                /*MetricDataStore.s5cRxCreateSessionValues.size() >= MAX_VALUES &&
+
+                /*
+                MetricDataStore.s5cRxCreateSessionValues.size() >= MAX_VALUES &&
                 MetricDataStore.uesActiveValues.size() >= MAX_VALUES &&
                 MetricDataStore.cpuSecondsValues.size() >= MAX_VALUES &&
                 MetricDataStore.memoryBytesValues.size() >= MAX_VALUES &&*/
@@ -102,7 +123,7 @@ public class PrometheusDataCollector {
         NsiLoadLevelInfo info = new NsiLoadLevelInfo();
 
         // Example mapping: adjust as needed for your actual SNSSAI, NSI ID, etc.
-        info.setSnssai(new Snssai(1, "010203"));
+        info.setSnssai(new Snssai(1, "000000"));
         info.setNsiId(UUID.randomUUID().toString());
 
         // ResourceUsage mapping
@@ -134,7 +155,26 @@ public class PrometheusDataCollector {
         info.setNumOfUes(numOfUes);
 
         NumberAverage numOfPduSess = new NumberAverage();
-        numOfPduSess.setNumber(parseIntSafe(MetricDataStore.NgPduSessionResourceSetupResponseValues, i));
+
+        numOfPduSess.setNumber(parseIntSafe(MetricDataStore.FivegsSmffunctionPdusessionCreationSuccValues, i));
+        /*
+        // numOfPduSess.setNumber(parseIntSafe(MetricDataStore.s5cRxCreateSessionValues, i));
+
+        // Calculate the number of PDU sessions at this timestamp
+        int pduSessionsAtTimestamp = 0;
+
+        if (i != 0) {
+            Integer current = parseIntSafe(MetricDataStore.NgPduSessionResourceSetupResponseValues, i);
+            Integer previous = parseIntSafe(MetricDataStore.NgPduSessionResourceSetupResponseValues, i - 1);
+            if ( previous != null && current == previous) {
+                pduSessionsAtTimestamp = pduSessionsAtTimestamp;
+            }
+            else if (current != null && previous != null && current > previous) {
+                pduSessionsAtTimestamp = pduSessionsAtTimestamp + (current - previous);
+            }
+        }
+        numOfPduSess.setNumber(pduSessionsAtTimestamp);*/
+
         numOfPduSess.setVariance(0f);
         info.setNumOfPduSess(numOfPduSess);
 
@@ -146,7 +186,7 @@ public class PrometheusDataCollector {
 
         // --- Threshold logic ---
         //boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 85);
-        boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage > 95); // Example thresholds, adjust as above
+        boolean exceed = (cpuUsage != null && cpuUsage > 80) || (memoryUsage != null && memoryUsage >= 94); // Example thresholds, adjust as above
         info.setExceedLoadLevelThrInd(exceed);
 
         if (exceed) {

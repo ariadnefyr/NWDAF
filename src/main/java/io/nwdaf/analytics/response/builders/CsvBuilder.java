@@ -15,7 +15,13 @@ public class CsvBuilder {
             List<NsiLoadLevelInfo> nsiLoadLevelInfos,
             int maxRows
     ) {
-        try (FileWriter writer = new FileWriter("nsi_load_level_metrics.csv")) {
+        String timestamp = java.time.format.DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss")
+                .withZone(java.time.ZoneOffset.UTC)
+                .format(java.time.Instant.now());
+
+        String fileName = "nsi_load_level_metrics_" + timestamp + ".csv";
+
+        try (FileWriter writer = new FileWriter(fileName)) {
             writer.write("timestamp,cpuUsage,memoryUsage,numOfUes,numOfPduSess,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod,confidence\n");
             //writer.write("timestamp,snssai,nsiId,cpuUsage,memoryUsage,numOfUes,numOfPduSess,numOfExceedLoadLevelThr,exceedLoadLevelThrInd,resUsgThrCrossTimePeriod,confidence\n");
             for (int i = 0; i < maxRows && i < nsiLoadLevelInfos.size() && i < timestamps.size(); i++) {
@@ -47,7 +53,7 @@ public class CsvBuilder {
                         (info.getConfidence() != null ? info.getConfidence() : "") + "," + "\n"
                 );
             }
-            System.out.println("CSV file created: nsi_load_level_metrics.csv");
+            System.out.println("CSV file created: " + fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }
